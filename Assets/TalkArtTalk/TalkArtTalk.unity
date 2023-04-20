@@ -2356,6 +2356,7 @@ GameObject:
   - component: {fileID: 552806126}
   - component: {fileID: 552806125}
   - component: {fileID: 552806127}
+  - component: {fileID: 552806128}
   m_Layer: 0
   m_Name: Speech to Text
   m_TagString: Untagged
@@ -2418,6 +2419,29 @@ MonoBehaviour:
     preInput:
     - {fileID: 683368318}
     postInput: []
+--- !u!114 &552806128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552806124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e5835c0fff44df7b039f88b5620c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GPTGen: {fileID: 552806127}
+  paintingId: 0
+  questionId: 0
+  PaintingPersonality:
+  - You are an autum forrest. You are gold, and orange and in the middle of autum.
+    You are a ground full of leaves, you thuck tree trunks. And a human wants you
+    to repsond to the folloing
+  Questions:
+  - ', and then ask a question back.'
+  Wisdom:
+  - ', and then offer advice relating to yourself, and humanistic buddism'
 --- !u!1 &592681260
 GameObject:
   m_ObjectHideFlags: 0
