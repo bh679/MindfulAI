@@ -314,7 +314,14 @@ namespace CognitiveServicesTTS
 		JanWhispering = 20,
 		JasonAngry = 21,
 		JasonWhispering = 22,
-		Total = 23
+		deDEAmalaNeural = 23,
+		zhTWHsiaoChenNeural = 24,
+		zhTWHsiaoYuNeural  = 25,
+		zhTWYunJheNeural = 26,
+		Total = 24
+		/*zh-TW-HsiaoChenNeural (Female)
+		zh-TW-HsiaoYuNeural (Female)
+		zh-TW-YunJheNeural */
 	/*enUS-AIGenerate1Neural1,4,5,6 (Male)
 		enUS-AIGenerate2Neural1,4,5,6 (Female)
 		enUS-AmberNeural4,5,6 (Female)
@@ -473,7 +480,7 @@ namespace CognitiveServicesTTS
         /// <returns></returns>
         public string ConvertVoiceNametoString(VoiceName voicename)
 	    {
-		    return "en-US-JennyNeural";
+		    // return "en-US-JennyNeural";
 		    
             switch (voicename)
             {
@@ -523,6 +530,14 @@ namespace CognitiveServicesTTS
 	            return "en-US-JasonAngry";
             case VoiceName.JasonWhispering:
 	            return "en-US-JasonWhispering";
+            case VoiceName.deDEAmalaNeural:
+	            return "de-DE-AmalaNeural";
+            case VoiceName.zhTWHsiaoChenNeural:
+	            return "zh-TW-HsiaoChenNeural";
+            case VoiceName.zhTWHsiaoYuNeural:
+	            return "zh-TW-HsiaoYuNeural";
+            case VoiceName.zhTWYunJheNeural:
+	            return "zh-TW-YunJheNeural";
             }
 		    return "en-US-JennyNeural";
         }

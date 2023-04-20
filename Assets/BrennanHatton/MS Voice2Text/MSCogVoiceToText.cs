@@ -40,7 +40,9 @@ public class MSCogVoiceToText : MonoBehaviour
 	private object threadLocker = new object();
 	private bool waitingForReco;
 	private string message;
-
+	public string language = "de-DE"; //https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt
+	//en-AU
+	//zh-TW
 	private bool micPermissionGranted = false;
 
 	//[HideInInspector]
@@ -57,6 +59,7 @@ public class MSCogVoiceToText : MonoBehaviour
 		// Creates an instance of a speech config with specified subscription key and service region.
 		// Replace with your own subscription key and service region (e.g., "westus").
 		var config = SpeechConfig.FromSubscription(key.text, region);
+		config.SpeechRecognitionLanguage = language;
 
 		// Make sure to dispose the recognizer after use!
 		using (var recognizer = new SpeechRecognizer(config))

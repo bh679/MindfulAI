@@ -19,12 +19,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
+    width: 1728
     height: 939
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 21779
+  controlID: -1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,10 +45,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 523
-    y: 73
-    width: 1003
-    height: 639
+    x: 459
+    y: 96
+    width: 256.5
+    height: 277
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1003, y: 618}
+  m_TargetSize: {x: 1080, y: 1920}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -68,23 +68,23 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 07000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -501.5
-    m_HBaseRangeMax: 501.5
-    m_VBaseRangeMin: -309
-    m_VBaseRangeMax: 309
+    m_HBaseRangeMin: -270
+    m_HBaseRangeMax: 270
+    m_VBaseRangeMin: -480
+    m_VBaseRangeMax: 480
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -95,23 +95,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1003
-      height: 618
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 501.5, y: 309}
+      width: 256.5
+      height: 256
+    m_Scale: {x: 0.26666668, y: 0.26666668}
+    m_Translation: {x: 128.25, y: 127.99999}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -501.5
-      y: -309
-      width: 1003
-      height: 618
+      x: -480.93747
+      y: -479.99994
+      width: 961.87494
+      height: 959.99994
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1003, y: 639}
+  m_defaultScale: 0.26666668
+  m_LastWindowPixelSize: {x: 513, y: 554}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -136,12 +136,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1528
+    width: 717.5
     height: 939
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 21780
+  controlID: -1
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,12 +162,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1528
-    height: 660
+    width: 717.5
+    height: 298
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 21781
+  controlID: -1
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,8 +185,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 100
-    height: 660
+    width: 222
+    height: 298
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -215,9 +215,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 19
-    width: 99
-    height: 639
+    y: 96
+    width: 221
+    height: 277
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -225,9 +225,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 90440100
-      m_LastClickedID: 83088
-      m_ExpandedIDs: 4a1bfefff823feff2e3afeff843afeff8e3cfeff6c49feffc249feffcc4bfeffd48afeff288bfeff2a8dfeff56befeff3cc0feffb4f3feff201effff741effff7620ffff30fbffff60060100f80601000808010054170100e81801006e330100ce34010024450100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -266,10 +266,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 100
+    x: 222
     y: 0
-    width: 423
-    height: 660
+    width: 237
+    height: 298
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 8}
@@ -298,10 +298,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 100
-    y: 73
-    width: 421
-    height: 639
+    x: 222
+    y: 96
+    width: 235
+    height: 277
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -312,7 +312,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -101, y: -26}
+      snapOffsetDelta: {x: -98, y: -26}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -377,9 +377,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -111, y: -191}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapOffset: {x: -100.5, y: 86}
+      snapOffsetDelta: {x: -10.5, y: 0}
+      snapCorner: 1
       id: Orientation
       index: 0
       layout: 4
@@ -398,7 +398,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -536,9 +536,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: -5.000763}
+    m_Target: {x: 239.50818, y: 99.44, z: 0}
     speed: 2
-    m_Value: {x: 0.000084147476, y: 0.00006112779, z: -5.0007634}
+    m_Value: {x: 497.6301, y: 198.6259, z: 34.430054}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -585,13 +585,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.14334494, y: -0.07948212, z: 0.011550348, w: -0.9864106}
+    m_Target: {x: 0.029393991, y: -0.13988152, z: -0.004154222, w: -0.98972464}
     speed: 2
-    m_Value: {x: -0.14334494, y: -0.07948213, z: 0.011550348, w: -0.9864106}
+    m_Value: {x: 0.014687682, y: -0.017400663, z: -0.00025545977, w: -0.9997424}
   m_Size:
-    m_Target: 7.2414637
+    m_Target: 258.85233
     speed: 2
-    m_Value: 7.241575
+    m_Value: 605.9871
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -659,10 +659,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 523
+    x: 459
     y: 0
-    width: 1005
-    height: 660
+    width: 258.5
+    height: 298
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -686,9 +686,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 660
-    width: 1528
-    height: 279
+    y: 298
+    width: 717.5
+    height: 641
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
@@ -698,7 +698,7 @@ MonoBehaviour:
   - {fileID: 14}
   - {fileID: 15}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 3
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -720,9 +720,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 733
-    width: 1527
-    height: 258
+    y: 394
+    width: 716.5
+    height: 620
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -740,22 +740,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/DoGPT
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/DoGPT
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Unity Projects\DoGPT
+  m_LastProjectPath: /Users/brennanhatton/Projects/Brennan/TalkArtTalk
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b8610000
-    m_LastClickedID: 25016
-    m_ExpandedIDs: 00000000b4610000b6610000b8610000ba610000bc610000be610000c06100000a6200008e6200009062000000ca9a3b
+    m_SelectedIDs: 1a600000
+    m_LastClickedID: 24602
+    m_ExpandedIDs: 0000000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -783,7 +783,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b4610000b6610000b8610000ba610000bc610000be610000c06100000a6200008e6200009062000000ca9a3b
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -808,8 +808,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 90440100
-    m_LastClickedInstanceID: 83088
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -860,9 +860,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 743
-    width: 999
-    height: 248
+    y: 739
+    width: 796
+    height: 252
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1000,26 +1000,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: FGCodeWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1528
+    x: 717.5
     y: 0
-    width: 392
+    width: 1010.5
     height: 939
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
-  m_Selected: 0
-  m_LastSelected: 4
+  - {fileID: 22}
+  - {fileID: 23}
+  - {fileID: 24}
+  m_Selected: 2
+  m_LastSelected: 2
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1040,9 +1043,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1528
+    x: 915
     y: 73
-    width: 391
+    width: 1004
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1051,7 +1054,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 326
+    m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
@@ -1076,37 +1079,37 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: ResponseDisplay.cs
+    m_Text: MsCogVoiceToGPT.cs
     m_Image: {fileID: 0}
-    m_Tooltip: in BrennanHatton/OpenAI/UI/
+    m_Tooltip: in BrennanHatton/MS Voice2Text/
   m_Pos:
     serializedVersion: 2
-    x: 1000
+    x: 797
     y: 73
-    width: 919
+    width: 1122
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  targetAsset: {fileID: 11500000, guid: e400f21c11c7aa04e9d8e4d5f8c43862, type: 3}
-  targetAssetGuid: e400f21c11c7aa04e9d8e4d5f8c43862
+  targetAsset: {fileID: 11500000, guid: f2b9bd10c5a021f409662d192346a389, type: 3}
+  targetAssetGuid: f2b9bd10c5a021f409662d192346a389
   textEditor:
-    scrollPosition: {x: 0, y: 152}
-    scrollPositionLine: 10
-    scrollPositionOffset: 2
+    scrollPosition: {x: 0, y: 0}
+    scrollPositionLine: 0
+    scrollPositionOffset: 0
     searchString: 
     caretPosition:
-      virtualColumn: 1
-      column: 1
-      characterIndex: 1
-      line: 64
+      virtualColumn: 16
+      column: 16
+      characterIndex: 7
+      line: 35
     _selectionStartPosition:
       virtualColumn: 0
       column: 0
       characterIndex: 0
       line: 0
-    hasSelection: 1
+    hasSelection: 0
     hiddenLinesStart: 
     hiddenLinesCount: 
     lineNumbersOffset: 0
@@ -1144,7 +1147,9 @@ MonoBehaviour:
     - 465
     - 480
     - 495
+    - 510
     - 525
+    - 540
     - 555
     - 570
     - 585
@@ -1152,36 +1157,12 @@ MonoBehaviour:
     - 615
     - 630
     - 645
-    - 660
-    - 690
-    - 705
-    - 720
-    - 735
-    - 750
-    - 765
-    - 780
-    - 795
-    - 810
-    - 825
-    - 840
-    - 855
-    - 870
-    - 885
-    - 900
-    - 915
-    - 930
-    - 945
-    - 960
-    - 975
-    - 990
-    - 1005
-    - 1020
     codeViewRect:
       serializedVersion: 2
       x: 32
-      y: 152
-      width: 867
-      height: 857
+      y: 0
+      width: 1085
+      height: 872
     tokenTooltip: {fileID: 0}
     argumentsHint: {fileID: 0}
     collapsedRegions: []
@@ -1200,37 +1181,182 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: SingleResponseDisplay.cs
+    m_Text: MSCogVoiceToText.cs
     m_Image: {fileID: 0}
-    m_Tooltip: in BrennanHatton/OpenAI/UI/
+    m_Tooltip: in BrennanHatton/MS Voice2Text/
   m_Pos:
     serializedVersion: 2
-    x: 1000
-    y: 73
-    width: 919
+    x: 717.5
+    y: 96
+    width: 1009.5
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  targetAsset: {fileID: 11500000, guid: c64cc5c4eab4d7b4997417b1a17c75af, type: 3}
-  targetAssetGuid: c64cc5c4eab4d7b4997417b1a17c75af
+  targetAsset: {fileID: 11500000, guid: ab6cbab0f21f85e4d87350c2b9619156, type: 3}
+  targetAssetGuid: ab6cbab0f21f85e4d87350c2b9619156
   textEditor:
-    scrollPosition: {x: 0, y: 47}
-    scrollPositionLine: 3
-    scrollPositionOffset: 2
-    searchString: 
+    scrollPosition: {x: 0, y: 336}
+    scrollPositionLine: 24
+    scrollPositionOffset: 0
+    searchString: microp
     caretPosition:
-      virtualColumn: 1
-      column: 1
-      characterIndex: 1
-      line: 60
+      virtualColumn: 13
+      column: 13
+      characterIndex: 4
+      line: 66
     _selectionStartPosition:
       virtualColumn: 0
       column: 0
       characterIndex: 0
       line: 0
-    hasSelection: 1
+    hasSelection: 0
+    hiddenLinesStart: 
+    hiddenLinesCount: 
+    lineNumbersOffset: 0
+    yLineOffsets: []
+    codeViewRect:
+      serializedVersion: 2
+      x: 37
+      y: 336
+      width: 952.5
+      height: 857
+    tokenTooltip: {fileID: 0}
+    argumentsHint: {fileID: 0}
+    collapsedRegions: []
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233c5be4b3c6a2f42af54a964d938960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: InputToGPT.cs
+    m_Image: {fileID: 0}
+    m_Tooltip: in BrennanHatton/OpenAI/UI/
+  m_Pos:
+    serializedVersion: 2
+    x: 1137
+    y: 73
+    width: 782
+    height: 918
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  targetAsset: {fileID: 11500000, guid: 6772d164392fc6b498861f37718d396a, type: 3}
+  targetAssetGuid: 6772d164392fc6b498861f37718d396a
+  textEditor:
+    scrollPosition: {x: 0, y: 0}
+    scrollPositionLine: 0
+    scrollPositionOffset: 0
+    searchString: 
+    caretPosition:
+      virtualColumn: 1
+      column: 1
+      characterIndex: 1
+      line: 6
+    _selectionStartPosition:
+      virtualColumn: 0
+      column: 0
+      characterIndex: 0
+      line: 0
+    hasSelection: 0
+    hiddenLinesStart: 
+    hiddenLinesCount: 
+    lineNumbersOffset: 0
+    yLineOffsets:
+    - 15
+    - 30
+    - 45
+    - 60
+    - 75
+    - 90
+    - 105
+    - 120
+    - 135
+    - 150
+    - 165
+    - 180
+    - 195
+    - 210
+    - 225
+    - 240
+    - 255
+    - 270
+    - 285
+    - 300
+    - 315
+    - 330
+    - 345
+    - 360
+    - 375
+    - 390
+    - 405
+    codeViewRect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 745
+      height: 872
+    tokenTooltip: {fileID: 0}
+    argumentsHint: {fileID: 0}
+    collapsedRegions: []
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233c5be4b3c6a2f42af54a964d938960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: GPT3.cs
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1137
+    y: 73
+    width: 782
+    height: 918
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  targetAsset: {fileID: 11500000, guid: 93e01f81f2eac4245b3eabecbbbfe9ea, type: 3}
+  targetAssetGuid: 93e01f81f2eac4245b3eabecbbbfe9ea
+  textEditor:
+    scrollPosition: {x: 0, y: 45}
+    scrollPositionLine: 3
+    scrollPositionOffset: 0
+    searchString: 
+    caretPosition:
+      virtualColumn: 1
+      column: 1
+      characterIndex: 1
+      line: 16
+    _selectionStartPosition:
+      virtualColumn: 0
+      column: 0
+      characterIndex: 0
+      line: 0
+    hasSelection: 0
     hiddenLinesStart: 
     hiddenLinesCount: 
     lineNumbersOffset: 0
@@ -1296,16 +1422,123 @@ MonoBehaviour:
     - 885
     - 900
     - 915
+    - 930
+    - 945
+    - 960
+    - 990
+    - 1005
+    - 1020
+    - 1035
+    - 1050
+    - 1065
+    - 1080
+    - 1095
+    - 1110
+    - 1125
+    - 1140
+    - 1155
+    - 1170
+    - 1185
+    - 1200
+    - 1215
+    - 1230
+    - 1245
+    - 1260
+    - 1275
+    - 1290
+    - 1305
+    - 1320
+    - 1335
+    - 1350
+    - 1365
+    - 1380
+    - 1395
+    - 1410
+    - 1425
+    - 1440
+    - 1455
+    - 1470
+    - 1485
+    - 1500
+    - 1515
+    - 1530
+    - 1545
+    - 1560
+    - 1575
+    - 1590
+    - 1605
+    - 1620
+    - 1635
+    - 1650
+    - 1665
+    - 1680
+    - 1695
+    - 1710
+    - 1725
+    - 1740
+    - 1755
+    - 1770
+    - 1785
+    - 1800
+    - 1815
+    - 1830
+    - 1845
+    - 1860
+    - 1875
+    - 1890
+    - 1905
+    - 1920
+    - 1935
+    - 1950
+    - 1965
+    - 1980
+    - 1995
+    - 2010
+    - 2025
+    - 2040
+    - 2055
+    - 2070
+    - 2085
+    - 2100
+    - 2130
+    - 2145
+    - 2160
+    - 2175
+    - 2190
+    - 2205
+    - 2235
+    - 2250
+    - 2265
+    - 2280
+    - 2295
+    - 2310
+    - 2325
+    - 2340
+    - 2355
+    - 2370
+    - 2385
+    - 2400
+    - 2415
+    - 2430
+    - 2445
+    - 2460
+    - 2475
+    - 2490
+    - 2505
+    - 2520
+    - 2535
+    - 2550
+    - 2565
     codeViewRect:
       serializedVersion: 2
-      x: 32
-      y: 47
-      width: 867
-      height: 872
+      x: 40
+      y: 45
+      width: 722
+      height: 857
     tokenTooltip: {fileID: 0}
     argumentsHint: {fileID: 0}
     collapsedRegions: []
---- !u!114 &20
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 61
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1320,31 +1553,262 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: MsCogVoiceToGPT.cs
+    m_Text: promptWrapper.cs
     m_Image: {fileID: 0}
-    m_Tooltip: in BrennanHatton/MS Voice2Text/
+    m_Tooltip: in BrennanHatton/OpenAI/UI/
   m_Pos:
     serializedVersion: 2
-    x: 1000
+    x: 1137
     y: 73
-    width: 919
+    width: 782
     height: 918
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  targetAsset: {fileID: 11500000, guid: f2b9bd10c5a021f409662d192346a389, type: 3}
-  targetAssetGuid: f2b9bd10c5a021f409662d192346a389
+  targetAsset: {fileID: 11500000, guid: c9de96ef962258445bd55a170401e128, type: 3}
+  targetAssetGuid: c9de96ef962258445bd55a170401e128
   textEditor:
     scrollPosition: {x: 0, y: 0}
     scrollPositionLine: 0
     scrollPositionOffset: 0
     searchString: 
     caretPosition:
-      virtualColumn: 55
-      column: 55
-      characterIndex: 2
-      line: 20
+      virtualColumn: 35
+      column: 35
+      characterIndex: 23
+      line: 44
+    _selectionStartPosition:
+      virtualColumn: 0
+      column: 0
+      characterIndex: 0
+      line: 0
+    hasSelection: 0
+    hiddenLinesStart: 
+    hiddenLinesCount: 
+    lineNumbersOffset: 0
+    yLineOffsets:
+    - 15
+    - 30
+    - 45
+    - 60
+    - 75
+    - 90
+    - 105
+    - 120
+    - 135
+    - 150
+    - 165
+    - 180
+    - 195
+    - 210
+    - 225
+    - 240
+    - 255
+    - 270
+    - 285
+    - 300
+    - 315
+    - 345
+    - 360
+    - 375
+    - 390
+    - 405
+    - 420
+    - 435
+    - 450
+    - 465
+    - 480
+    - 495
+    - 510
+    - 525
+    - 540
+    - 555
+    - 570
+    - 585
+    - 600
+    - 615
+    - 630
+    - 645
+    - 660
+    - 675
+    - 690
+    - 705
+    - 720
+    - 735
+    - 750
+    - 765
+    - 780
+    codeViewRect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 745
+      height: 872
+    tokenTooltip: {fileID: 0}
+    argumentsHint: {fileID: 0}
+    collapsedRegions: []
+--- !u!114 &23
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233c5be4b3c6a2f42af54a964d938960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: ResponseDisplay.cs
+    m_Image: {fileID: 0}
+    m_Tooltip: in BrennanHatton/OpenAI/UI/
+  m_Pos:
+    serializedVersion: 2
+    x: 797
+    y: 73
+    width: 1122
+    height: 918
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  targetAsset: {fileID: 11500000, guid: e400f21c11c7aa04e9d8e4d5f8c43862, type: 3}
+  targetAssetGuid: e400f21c11c7aa04e9d8e4d5f8c43862
+  textEditor:
+    scrollPosition: {x: 0, y: 0}
+    scrollPositionLine: 0
+    scrollPositionOffset: 0
+    searchString: 
+    caretPosition:
+      virtualColumn: 47
+      column: 47
+      characterIndex: 38
+      line: 31
+    _selectionStartPosition:
+      virtualColumn: 0
+      column: 0
+      characterIndex: 0
+      line: 0
+    hasSelection: 0
+    hiddenLinesStart: 
+    hiddenLinesCount: 
+    lineNumbersOffset: 0
+    yLineOffsets:
+    - 15
+    - 30
+    - 45
+    - 60
+    - 75
+    - 90
+    - 105
+    - 120
+    - 135
+    - 150
+    - 165
+    - 180
+    - 195
+    - 210
+    - 225
+    - 240
+    - 255
+    - 270
+    - 285
+    - 300
+    - 315
+    - 330
+    - 345
+    - 360
+    - 375
+    - 390
+    - 405
+    - 420
+    - 435
+    - 450
+    - 480
+    - 495
+    - 510
+    - 525
+    - 540
+    - 555
+    - 570
+    - 585
+    - 600
+    - 615
+    - 630
+    - 645
+    - 660
+    - 675
+    - 690
+    - 705
+    - 720
+    - 735
+    - 750
+    - 765
+    - 780
+    - 795
+    - 810
+    - 825
+    - 840
+    - 855
+    - 870
+    - 885
+    - 900
+    - 915
+    - 930
+    - 945
+    codeViewRect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 1070
+      height: 857
+    tokenTooltip: {fileID: 0}
+    argumentsHint: {fileID: 0}
+    collapsedRegions: []
+--- !u!114 &24
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233c5be4b3c6a2f42af54a964d938960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: RectTransformExtensions.cs
+    m_Image: {fileID: 0}
+    m_Tooltip: in BrennanHatton/
+  m_Pos:
+    serializedVersion: 2
+    x: 797
+    y: 73
+    width: 1122
+    height: 918
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  targetAsset: {fileID: 11500000, guid: 986001cc45f86a748b767b1c9b52b568, type: 3}
+  targetAssetGuid: 986001cc45f86a748b767b1c9b52b568
+  textEditor:
+    scrollPosition: {x: 0, y: 0}
+    scrollPositionLine: 0
+    scrollPositionOffset: 0
+    searchString: SetLocalPositionAndRotation
+    caretPosition:
+      virtualColumn: 1
+      column: 1
+      characterIndex: 1
+      line: 43
     _selectionStartPosition:
       virtualColumn: 0
       column: 0
@@ -1398,124 +1862,13 @@ MonoBehaviour:
     - 615
     - 630
     - 645
-    codeViewRect:
-      serializedVersion: 2
-      x: 32
-      y: 0
-      width: 882
-      height: 872
-    tokenTooltip: {fileID: 0}
-    argumentsHint: {fileID: 0}
-    collapsedRegions: []
---- !u!114 &21
-MonoBehaviour:
-  m_ObjectHideFlags: 61
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 233c5be4b3c6a2f42af54a964d938960, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: promptWrapper.cs
-    m_Image: {fileID: 0}
-    m_Tooltip: in BrennanHatton/OpenAI/UI/
-  m_Pos:
-    serializedVersion: 2
-    x: 1528
-    y: 73
-    width: 391
-    height: 918
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  targetAsset: {fileID: 11500000, guid: c9de96ef962258445bd55a170401e128, type: 3}
-  targetAssetGuid: c9de96ef962258445bd55a170401e128
-  textEditor:
-    scrollPosition: {x: 0, y: 0}
-    scrollPositionLine: 0
-    scrollPositionOffset: 0
-    searchString: 
-    caretPosition:
-      virtualColumn: 0
-      column: 0
-      characterIndex: 0
-      line: 52
-    _selectionStartPosition:
-      virtualColumn: 0
-      column: 0
-      characterIndex: 0
-      line: 0
-    hasSelection: 1
-    hiddenLinesStart: 
-    hiddenLinesCount: 
-    lineNumbersOffset: 0
-    yLineOffsets:
-    - 15
-    - 30
-    - 45
-    - 60
-    - 75
-    - 90
-    - 105
-    - 120
-    - 150
-    - 165
-    - 180
-    - 195
-    - 210
-    - 225
-    - 255
-    - 285
-    - 300
-    - 330
-    - 360
-    - 375
-    - 390
-    - 435
-    - 465
-    - 480
-    - 495
-    - 525
-    - 540
-    - 570
-    - 585
-    - 600
-    - 615
-    - 630
-    - 645
     - 660
-    - 690
-    - 720
-    - 735
-    - 765
-    - 780
-    - 795
-    - 825
-    - 855
-    - 870
-    - 885
-    - 900
-    - 915
-    - 930
-    - 945
-    - 960
-    - 975
-    - 990
-    - 1005
-    - 1020
     codeViewRect:
       serializedVersion: 2
       x: 32
       y: 0
-      width: 339
-      height: 857
+      width: 1085
+      height: 872
     tokenTooltip: {fileID: 0}
     argumentsHint: {fileID: 0}
     collapsedRegions: []
