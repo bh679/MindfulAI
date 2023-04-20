@@ -10,7 +10,7 @@ public class DropDownToMSCogLanugage : MonoBehaviour
 	
 	public MSCogVoiceToText voiceToText;
 	public SpeechManager speechManager;
-	public MsCogVoiceToGPT openAi;
+	public ArtPromptManager artPromptManager;
 	public TMP_Dropdown dropDown;
 	
 	public string[] values;
@@ -22,7 +22,7 @@ public class DropDownToMSCogLanugage : MonoBehaviour
 		dropDown = this.GetComponent<TMP_Dropdown>();
 		voiceToText = GameObject.FindFirstObjectByType<MSCogVoiceToText>();
 		speechManager = GameObject.FindFirstObjectByType<SpeechManager>();
-		openAi = GameObject.FindFirstObjectByType<MsCogVoiceToGPT>();
+		artPromptManager = GameObject.FindFirstObjectByType<ArtPromptManager>();
 		
 	}
 	
@@ -39,6 +39,6 @@ public class DropDownToMSCogLanugage : MonoBehaviour
 	{
 		voiceToText.language = values[val];
 		speechManager.voiceName = voices[val];
-		openAi.promptWrapper.prePrompt = textBeforeLang + dropDown.options[val].text;
+		artPromptManager.languagePrompt = textBeforeLang + dropDown.options[val].text;
 	}
 }

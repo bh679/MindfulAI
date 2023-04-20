@@ -15,6 +15,8 @@ namespace BrennanHatton.AI
 		public bool includePrompt;
 		RectTransform rect;
 		
+		public bool showHistory;
+		
 		void Reset()
 		{
 			gpt3 = FindObjectOfType<GPT3>();
@@ -36,21 +38,29 @@ namespace BrennanHatton.AI
 			response.gameObject.SetActive(true);
 			response.SetResponse(data, includePrompt);
 			
-			//move all down
-			for(int i = 0; i < responses.Count; i++)
+			if(showHistory)
 			{
-				responses[i].gameObject.SetActive(true);
-				responses[i].transform.position = responses[i].transform.position + Vector3.down*response.Height;
-				
-				//Debug.Log(i+": "+Mathf.Abs(responses[i].transform.position.y) + " > " + rect.GetHeight());
-				//Debug.Log(responses[i].transform.position.y );
-				
-				if(responses[i].transform.position.y < 0)
+				//move all down
+				for(int i = 0; i < responses.Count; i++)
 				{
-					responses[i].gameObject.SetActive(false);
+					responses[i].gameObject.SetActive(true);
+					responses[i].transform.position = responses[i].transform.position + Vector3.down*response.Height;
 					
-					//i = responses.Count;
+					//Debug.Log(i+": "+Mathf.Abs(responses[i].transform.position.y) + " > " + rect.GetHeight());
+					//Debug.Log(responses[i].transform.position.y );
+					
+					if(responses[i].transform.position.y < 0)
+					{
+						responses[i].gameObject.SetActive(false);
+						
+						//i = responses.Count;
+					}
 				}
+			}
+			else
+			{
+				if(responses.Count > 0)
+					responses[responses.Count -1 ].gameObject.SetActive(false);
 			}
 			
 			

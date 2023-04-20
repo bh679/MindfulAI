@@ -10,6 +10,7 @@ namespace BrennanHatton.AI
 		public SpeechManager speechManager;
 		public GPT3 gpt;
 		int length = 0;
+		public PromptWrapper wrapper;
 		
 		void Reset()
 		{
@@ -22,7 +23,7 @@ namespace BrennanHatton.AI
 		{
 			if(length != gpt.interactions.Count)
 			{
-				speechManager.SpeakWithSDKPlugin(gpt.interactions[gpt.interactions.Count-1].GeneratedText);
+				speechManager.SpeakWithSDKPlugin(wrapper.wrapPromopt(gpt.interactions[gpt.interactions.Count-1].GeneratedText));
 				length = gpt.interactions.Count;
 			}
 		}
