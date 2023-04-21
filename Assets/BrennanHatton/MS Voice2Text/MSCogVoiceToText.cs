@@ -76,7 +76,7 @@ public class MSCogVoiceToText : MonoBehaviour
 			// shot recognition like command or query.
 			// For long-running multi-utterance recognition, use StartContinuousRecognitionAsync() instead.
 			var result = await recognizer.RecognizeOnceAsync().ConfigureAwait(false);
-
+	
 			// Checks result.
 			string newMessage = string.Empty;
 			if (result.Reason == ResultReason.RecognizedSpeech)

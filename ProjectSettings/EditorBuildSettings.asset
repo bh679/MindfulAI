@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/DoGPT/DogPT.unity
     guid: c109b446754e8c64e835c58c98389a86
+  - enabled: 1
+    path: Assets/TalkArtTalk/TalkArtTalk.unity
+    guid: 07238dbe638b54bc9aa8ab7e3ebb120f
   m_configObjects: {}

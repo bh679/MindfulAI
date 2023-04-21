@@ -8,25 +8,64 @@ using BrennanHatton.AI;
 [System.Serializable]
 public class Painting
 {
+	public string title;
 	public Sprite image;
 	public string personality;
+	public string artist;
+	public string description;
+}
+
+[System.Serializable]
+public class PaintingGroup
+{
+	public string name;
+	public Painting[] paintings;
+	int[] paintOrder;
+	
+	public Painting GetPainting(int i)
+	{
+		if(paintOrder == null)
+			return null;
+			
+		return paintings[paintOrder[i]];
+	}
+	
+	public void Setup()
+	{
+		if(paintings == null)
+			return;
+			
+		paintOrder = new int[paintings.Length];
+		
+		for(int i = 0 ;i < paintOrder.Length; i++)
+			paintOrder[i] = i;
+		
+		paintOrder = Shuffle.ShuffleArray<int>(paintOrder);
+	}
 }
 
 public class ArtPromptManager : MonoBehaviour
 {
 	public MsCogVoiceToGPT GPTGen;
 	public ReadResponse responseReader;
-	public SpriteRenderer pictureChanger;
-	
+	public PictureTransition pictureChanger;
 	
 	public int paintingId = 0, questionId = 0, questionsToAsk = 5, wisdomToOffer = 2;
 	
-	public Painting[] painting;
+	public PaintingGroup[] paintingGroups;
+	public int groupId;
 	public string instructions = ". A human wants you to repsond to the folloing";
 	public string Questions,
 		Wisdom;
 	public string[] Instruction;
 	public string languagePrompt;
+	
+	Painting CurrentPainting
+	{
+		get{
+			return paintingGroups[groupId].GetPainting(paintingId);
+		}
+	}
 	
 	void Reset()
 	{
@@ -35,18 +74,28 @@ public class ArtPromptManager : MonoBehaviour
 	
 	void Start()
 	{
-		AskQuestion();
+		for(int i = 0; i < paintingGroups.Length; i++)
+			paintingGroups[i].Setup();
+		
+		
+		while(paintingGroups[groupId].paintings.Length == 0)
+			groupId = (groupId + 1) % paintingGroups.Length;
+			
+		GPTGen.promptWrapper.prePrompt = CurrentPainting.personality + instructions + Questions + languagePrompt;
+	
+		responseReader.wrapper.postPrompt = "";
+		pictureChanger.background.sprite = CurrentPainting.image;
 	}
 	
 	public void AskQuestion()
 	{
 		if(questionId < questionsToAsk)
-			GPTGen.promptWrapper.prePrompt = painting[paintingId].personality + instructions + Questions + languagePrompt;
+			GPTGen.promptWrapper.prePrompt = CurrentPainting.personality + instructions + Questions + languagePrompt;
 		else if(questionId < questionsToAsk+wisdomToOffer)
-			GPTGen.promptWrapper.prePrompt = painting[paintingId].personality + instructions + Wisdom + languagePrompt;
+			GPTGen.promptWrapper.prePrompt = CurrentPainting.personality + instructions + Wisdom + languagePrompt;
 		else
 		{
-			GPTGen.promptWrapper.prePrompt = painting[paintingId].personality + instructions + languagePrompt;
+			GPTGen.promptWrapper.prePrompt = CurrentPainting.personality + instructions + languagePrompt;
 			responseReader.wrapper.postPrompt = Instruction[Random.Range(0,Instruction.Length)];
 		}
 		
@@ -57,12 +106,55 @@ public class ArtPromptManager : MonoBehaviour
 	{
 		if(questionId > questionsToAsk+wisdomToOffer)
 		{
-			paintingId++;
-			questionId = 0;
+			NextPicture();
 			
-			pictureChanger.sprite = painting[paintingId % painting.Length].image;
-			pictureChanger.gameObject.SetActive(true);
-			responseReader.wrapper.postPrompt = "";
 		}
+	}
+	
+	public void NextPicture()
+	{
+		paintingId++;// = (paintingId + 1) % paintingGroups[groupId].Length;
+		if(paintingId >= paintingGroups[groupId].paintings.Length)
+		{
+			groupId = (groupId + 1) % paintingGroups.Length;
+			
+			while(paintingGroups[groupId].paintings.Length == 0)
+				groupId = (groupId + 1) % paintingGroups.Length;
+				
+			paintingId = 0;
+		}
+		
+		questionId = 0;
+			
+		pictureChanger.mySprite.sprite = CurrentPainting.image;
+		pictureChanger.gameObject.SetActive(true);
+		responseReader.wrapper.postPrompt = "";
+	}
+	
+	public void PreviousPicture()
+	{
+		//Debug.Log("PreviousPicture");
+		paintingId--;// % painting.Length;
+		if(paintingId < 0)
+		{
+			
+			groupId = (groupId - 1);
+			if(groupId < 0)
+				groupId = paintingGroups.Length - 1;
+			
+			while(paintingGroups[groupId].paintings.Length == 0)
+			{
+				groupId = (groupId - 1);// % paintingGroups.Length;
+				if(groupId < 0)
+					groupId = paintingGroups.Length - 1;
+			}
+			paintingId = paintingGroups[groupId].paintings.Length - 1;
+		}
+			
+		questionId = 0;
+			
+		pictureChanger.mySprite.sprite = CurrentPainting.image;
+		pictureChanger.gameObject.SetActive(true);
+		responseReader.wrapper.postPrompt = "";
 	}
 }

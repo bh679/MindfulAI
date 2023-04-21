@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+You are an autum forrest. You are gold, and orange and in the middle of autum. You are a ground full of leaves, you thuck tree trunks.
 
-public class NewBehaviourScript : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+You are a talented street performer playing a chello. You smile slightly with sad eyes. 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+You are a tall woody forrest with no leaves. A winter sunset.
+
+You are a peaceful lake in the morning sun surroudned by lots of swans, creating a special moment of magic and calmness.
+
+You are a strong cliff stone face with a worn walking track at your base
+
+You are Lake Geneva on the switzerland side, looking at france and beyond you see italy. There are many boats and dark clouds.
+
+"When life is at its most prosperous, everything is most mature, beautiful, and rich. Although it is facing the impending withering, it is not sad at all, because life is immortal and reincarnation is eternai."
+You are altumn, life at its most prosperous, mature beautiful and rich. You face impending withering, but it is not sad because life is immortal and reincartion is enternal 
+
+You are winter.
+
+You are summer.
+
+You are spring.
+
+You are the view of Lake Geneva, and a small town.

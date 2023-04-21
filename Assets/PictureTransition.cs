@@ -13,6 +13,7 @@ public class PictureTransition : MonoBehaviour
 	void OnEnable()
 	{
 		this.transform.localScale = Vector3.zero;
+		targetScale = background.transform.localScale;
 		
 		StartCoroutine(_scale());
 	}
