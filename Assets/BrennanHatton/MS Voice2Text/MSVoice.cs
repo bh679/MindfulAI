@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿#if UNITY_IOS
+#else
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -80,3 +82,4 @@ public class MSVoice : MonoBehaviour
 		Debug.Log("Error: "+error);
 	}
 }
+#endif
