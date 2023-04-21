@@ -13,6 +13,7 @@ using System.Security.Cryptography.X509Certificates;
 #endif
 using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
+using UnityEngine.Events;
 
 /// <summary>
 /// SpeechManager provides two paths for Speech Synthesis using the 
@@ -41,6 +42,7 @@ public class SpeechManager : MonoBehaviour {
 	public VoiceName voiceName = VoiceName.enUSJennyNeural;
 	public int VoicePitch = 0;
 	public bool autoPlayOnceDownloaded = true;
+	public UnityEvent onPlay;
 
 	// Access token used to make calls against the Cognitive Services Speech API
 	string accessToken;
@@ -184,7 +186,10 @@ public class SpeechManager : MonoBehaviour {
 			audioStream = resultStream;
 			
 			if(autoPlayOnceDownloaded)
+			{
+				onPlay.Invoke();
 				PlayAudio(resultStream);
+			}
 		}
 	}
 
@@ -484,6 +489,7 @@ public class SpeechManager : MonoBehaviour {
 			if(autoPlayOnceDownloaded)
 			{
 				PlayFromData();
+				onPlay.Invoke();
 			}
 		}
 		else if (result.Reason == ResultReason.Canceled)

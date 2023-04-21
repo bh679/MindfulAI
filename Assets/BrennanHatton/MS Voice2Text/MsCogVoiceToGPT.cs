@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace BrennanHatton.AI
 {
@@ -10,6 +11,7 @@ namespace BrennanHatton.AI
 		public GPT3 gpt;
 		public MSCogVoiceToText text2Speech;
 		public PromptWrapper promptWrapper;
+		public UnityEvent onVoiceFinish;
 	
 		int resultsCount = 0;
 		
@@ -18,12 +20,6 @@ namespace BrennanHatton.AI
 			gpt = FindObjectOfType<GPT3>();
 			text2Speech = FindObjectOfType<MSCogVoiceToText>();
 		}
-		
-	    // Start is called before the first frame update
-	    void Start()
-	    {
-	        
-	    }
 	
 	    // Update is called once per frame
 	    void Update()
@@ -35,6 +31,8 @@ namespace BrennanHatton.AI
 		    	gpt.Execute(promptWrapper.wrapPromopt(text2Speech.results[resultsCount].message));
 		    	
 		    	resultsCount = text2Speech.results.Count;
+		    	
+		    	onVoiceFinish.Invoke();
 		    	
 		    }
 	    }
