@@ -9,9 +9,10 @@ Built using Unity, Microsoft Congative Services, and OpenAi's GPT3
 Designed for MacOS, iOS, Windows and Android.
 
 ## Requirements
-[BrennanHattons Unity Tools](https://github.com/bh679/Unity-Tools) <br />
-MS Cognative Services API Key<br />
-OpenAI API Key<br />
+[Unity 2021.3.19/f1](https://unity3d.com/unity/whats-new/2021.3.19) (free)   <br />
+[BrennanHattons Unity Tools](https://github.com/bh679/Unity-Tools) (free)  <br />
+MS Cognative Services API Key (trial / paid) <br />
+OpenAI API Key (paid)<br />
 
 
 ## Pre-Installed <br />
