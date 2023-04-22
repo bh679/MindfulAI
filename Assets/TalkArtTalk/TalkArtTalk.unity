@@ -267,6 +267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 27586040}
+  - component: {fileID: 27586041}
   m_Layer: 5
   m_Name: Thinking
   m_TagString: Untagged
@@ -298,6 +299,138 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &27586041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27586039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66563b6a4e0c2b74b90057612789d8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  TimedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 390553200}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  repeats: 0
+  onEnable: 1
+  repeatOnEnable: 1
+--- !u!1 &38001188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 38001189}
+  - component: {fileID: 38001192}
+  - component: {fileID: 38001191}
+  - component: {fileID: 38001190}
+  m_Layer: 0
+  m_Name: Transition Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &38001189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38001188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -282.493, y: -204.9699, z: 3}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1464767781}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &38001190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38001188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eeeb2e80abdd40038236bda44501f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  timeToScale: 1.8
+  targetScale: {x: 0, y: 0, z: 0}
+  mainPainting: {fileID: 1528967930}
+  myMeshRenderer: {fileID: 38001191}
+--- !u!23 &38001191
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38001188}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &38001192
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38001188}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &58238409
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,90 +2800,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476881741}
   m_CullTransparentMesh: 1
---- !u!1 &492861443
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 492861444}
-  - component: {fileID: 492861445}
-  m_Layer: 0
-  m_Name: brennanhatton_a_dog_ai_GPT_791a2659-399e-4389-b885-850bbf5a6eed (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &492861444
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492861443}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -290.2302, y: -202.74892, z: 3}
-  m_LocalScale: {x: 0.5386932, y: 0.5386932, z: 0.5386932}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1464767781}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &492861445
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492861443}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 914d4cb2eb8496941834ddad35147411, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &533411112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,7 +2988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &544694643
 Transform:
   m_ObjectHideFlags: 0
@@ -2953,7 +3002,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1464767781}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &544694644
 SpriteRenderer:
@@ -3193,6 +3242,9 @@ GameObject:
   - component: {fileID: 552806125}
   - component: {fileID: 552806127}
   - component: {fileID: 552806128}
+  - component: {fileID: 552806130}
+  - component: {fileID: 552806129}
+  - component: {fileID: 552806131}
   m_Layer: 0
   m_Name: Speech to Text
   m_TagString: Untagged
@@ -3295,98 +3347,221 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GPTGen: {fileID: 552806127}
   responseReader: {fileID: 1980950972}
-  pictureChanger: {fileID: 1835670535}
+  pictureChanger: {fileID: 38001190}
   paintingId: 0
   questionId: 0
-  questionsToAsk: 1
-  wisdomToOffer: 1
-  paintingGroups:
-  - name: West Elevator Tower
-    paintings:
-    - title: 
-      image: {fileID: 21300000, guid: a4755296f569e463e94882ea9e7b3d13, type: 3}
-      personality: 'You are altumn, life at its most prosperous, mature beautiful
-        and rich. You face impending withering, but it is not sad because life is
-        immortal and reincartion is enternal '
-      artist: Hui Yu Lo
-      description: 
-    - title: 
-      image: {fileID: 21300000, guid: 0bf41ef7a20854da78d4b2eb3bf27330, type: 3}
-      personality: You are winter.
-      artist: Hui Yu Lo
-      description: 
-    - title: 
-      image: {fileID: 21300000, guid: bd77167be4fe64b3aac5ec4687bf6843, type: 3}
-      personality: You are summer
-      artist: Hui Yu Lo
-      description: 
-    - title: 
-      image: {fileID: 21300000, guid: cd4509d9fc95c40209d54068e43e03d1, type: 3}
-      personality: You are spring
-      artist: Hui Yu Lo
-      description: 
-    - title: 
-      image: {fileID: 21300000, guid: 118f50724bcda4ad88b78919278dc910, type: 3}
-      personality: You are the view of Lake Geneva, and a small town.
-      artist: Hui Yu Lo
-      description: 
-  - name: Entrance
-    paintings: []
-  - name: Hall 1
-    paintings: []
-  - name: Hall 2
-    paintings: []
-  - name: Hall 3
-    paintings: []
-  - name: Hall 4
-    paintings: []
-  - name: Last Room
-    paintings: []
-  - name: East Elevator Tower
-    paintings:
-    - title: 
-      image: {fileID: 21300000, guid: 6c4fada11215644e8999aa31d088b73e, type: 3}
-      personality: You are an autum forrest. You are gold, and orange and in the
-        middle of autum. You are a ground full of leaves, you thuck tree trunks.
-      artist: Hui Yu Lo
-      description: 
-    - title: 
-      image: {fileID: 21300000, guid: fa3953f09119b4655bde739717da0fbe, type: 3}
-      personality: 'You are a talented street performer playing a chello. You smile
-        slightly with sad eyes. '
-      artist: Hui Yu Lo
-      description: 
-    - title: 
-      image: {fileID: 21300000, guid: 35b003a134233473b9a872405bda2694, type: 3}
-      personality: You are a tall woody forrest with no leaves. A winter sunset.
-      artist: Hui Yu Lo
-      description: 
-    - title: 
-      image: {fileID: 21300000, guid: 93a82cb395c464b2ea12021825df34d7, type: 3}
-      personality: You are a peaceful lake in the morning sun surroudned by lots
-        of swans, creating a special moment of magic and calmness.
-      artist: Hui Yu Lo
-      description: 
-    - title: 
-      image: {fileID: 21300000, guid: 930553a9665cb464387e2c00aa4635da, type: 3}
-      personality: You are a strong cliff stone face with a worn walking track at
-        your base
-      artist: Hui Yu Lo
-      description: 
-    - title: 
-      image: {fileID: 21300000, guid: eaa180ca6052447bb9979c0279f47091, type: 3}
-      personality: You are Lake Geneva on the switzerland side, looking at france
-        and beyond you see italy. There are many boats and dark clouds.
-      artist: Hui Yu Lo
-      description: 
+  galleryData:
+    paintingGroups:
+    - name: West Elevator Tower
+      paintings:
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg
+        personality: 'You are altumn, life at its most prosperous, mature beautiful
+          and rich. You face impending withering, but it is not sad because life
+          is immortal and reincartion is enternal '
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg
+        personality: You are winter.
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg
+        personality: You are summer
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+      - title: 
+        imageUrl: 
+        personality: You are spring
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg
+        personality: You are the view of Lake Geneva, and a small town.
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+    - name: Entrance
+      paintings: []
+    - name: Hall 1
+      paintings: []
+    - name: Hall 2
+      paintings: []
+    - name: Hall 3
+      paintings: []
+    - name: Hall 4
+      paintings: []
+    - name: Last Room
+      paintings: []
+    - name: East Elevator Tower
+      paintings:
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg
+        personality: You are an autum forrest. You are gold, and orange and in the
+          middle of autum. You are a ground full of leaves, you thuck tree trunks.
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg
+        personality: 'You are a talented street performer playing a chello. You smile
+          slightly with sad eyes. '
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/75C53398-A7E6-4FD2-BB8D-AEB14F122F92-scaled.jpg
+        personality: You are a tall woody forrest with no leaves. A winter sunset.
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg
+        personality: You are a peaceful lake in the morning sun surroudned by lots
+          of swans, creating a special moment of magic and calmness.
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg
+        personality: You are a strong cliff stone face with a worn walking track
+          at your base
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+      - title: 
+        imageUrl: http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg
+        personality: You are Lake Geneva on the switzerland side, looking at france
+          and beyond you see italy. There are many boats and dark clouds.
+        artist: Hui Yu Lo
+        description: 
+        texture: {fileID: 0}
+    questionsToAsk: 1
+    wisdomToOffer: 2
+    instructions: . A human wants you to repsond to the folloing
+    Questions: 
+    Wisdom: 
   groupId: 0
-  instructions: . A human wants you to repsond to the folloing
-  Questions: ', and ask a question back: '
-  Wisdom: ', and offer some wisdom from humaistic buddhism: '
   Instruction:
   - Thank you for the conversation, I encouarge you to speak with more of the paintings
     in this gallery. Here is one I recommend.
   languagePrompt: 
+  lanugage: {fileID: 1317006646}
+--- !u!114 &552806129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552806124}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8020e993e8842fca7da828f585e781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textAssBev: {fileID: 552806131}
+  textAsset: {fileID: 4900000, guid: 2b9fffe93ca6d4bbd87369b4d1b73295, type: 3}
+  artManager: {fileID: 552806128}
+--- !u!114 &552806130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552806124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463c77b2ccfe44e439a42a0b51e1e289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  json: "{\n    \"paintingGroups\": [\n        {\n            \"name\": \"West Elevator
+    Tower\",\n            \"paintings\": [\n                {\n                   
+    \"title\": \"\",\n                    \"imageUrl\": \"http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg\",\n                   
+    \"personality\": \"You are altumn, life at its most prosperous, mature beautiful
+    and rich. You face impending withering, but it is not sad because life is immortal
+    and reincartion is enternal \",\n                    \"artist\": \"Hui Yu Lo\",\n                   
+    \"description\": \"\",\n                    \"texture\": {\n                       
+    \"instanceID\": 0\n                    }\n                },\n               
+    {\n                    \"title\": \"\",\n                    \"imageUrl\": \"http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg\",\n                   
+    \"personality\": \"You are winter.\",\n                    \"artist\": \"Hui
+    Yu Lo\",\n                    \"description\": \"\",\n                    \"texture\":
+    {\n                        \"instanceID\": 0\n                    }\n               
+    },\n                {\n                    \"title\": \"\",\n                   
+    \"imageUrl\": \"http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg\",\n                   
+    \"personality\": \"You are summer\",\n                    \"artist\": \"Hui Yu
+    Lo\",\n                    \"description\": \"\",\n                    \"texture\":
+    {\n                        \"instanceID\": 0\n                    }\n               
+    },\n                {\n                    \"title\": \"\",\n                   
+    \"imageUrl\": \"\",\n                    \"personality\": \"You are spring\",\n                   
+    \"artist\": \"Hui Yu Lo\",\n                    \"description\": \"\",\n                   
+    \"texture\": {\n                        \"instanceID\": 0\n                   
+    }\n                },\n                {\n                    \"title\": \"\",\n                   
+    \"imageUrl\": \"http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg\",\n                   
+    \"personality\": \"You are the view of Lake Geneva, and a small town.\",\n                   
+    \"artist\": \"Hui Yu Lo\",\n                    \"description\": \"\",\n                   
+    \"texture\": {\n                        \"instanceID\": 0\n                   
+    }\n                }\n            ]\n        },\n        {\n            \"name\":
+    \"Entrance\",\n            \"paintings\": []\n        },\n        {\n           
+    \"name\": \"Hall 1\",\n            \"paintings\": []\n        },\n        {\n           
+    \"name\": \"Hall 2\",\n            \"paintings\": []\n        },\n        {\n           
+    \"name\": \"Hall 3\",\n            \"paintings\": []\n        },\n        {\n           
+    \"name\": \"Hall 4\",\n            \"paintings\": []\n        },\n        {\n           
+    \"name\": \"Last Room\",\n            \"paintings\": []\n        },\n       
+    {\n            \"name\": \"East Elevator Tower\",\n            \"paintings\":
+    [\n                {\n                    \"title\": \"\",\n                   
+    \"imageUrl\": \"\",\n                    \"personality\": \"You are an autum
+    forrest. You are gold, and orange and in the middle of autum. You are a ground
+    full of leaves, you thuck tree trunks.\",\n                    \"artist\": \"Hui
+    Yu Lo\",\n                    \"description\": \"\",\n                    \"texture\":
+    {\n                        \"instanceID\": 0\n                    }\n               
+    },\n                {\n                    \"title\": \"\",\n                   
+    \"imageUrl\": \"\",\n                    \"personality\": \"You are a talented
+    street performer playing a chello. You smile slightly with sad eyes. \",\n                   
+    \"artist\": \"Hui Yu Lo\",\n                    \"description\": \"\",\n                   
+    \"texture\": {\n                        \"instanceID\": 0\n                   
+    }\n                },\n                {\n                    \"title\": \"\",\n                   
+    \"imageUrl\": \"http://13.237.241.168/wp-content/uploads/2023/04/75C53398-A7E6-4FD2-BB8D-AEB14F122F92-scaled.jpg\",\n                   
+    \"personality\": \"You are a tall woody forrest with no leaves. A winter sunset.\",\n                   
+    \"artist\": \"Hui Yu Lo\",\n                    \"description\": \"\",\n                   
+    \"texture\": {\n                        \"instanceID\": 0\n                   
+    }\n                },\n                {\n                    \"title\": \"\",\n                   
+    \"imageUrl\": \"\",\n                    \"personality\": \"You are a peaceful
+    lake in the morning sun surroudned by lots of swans, creating a special moment
+    of magic and calmness.\",\n                    \"artist\": \"Hui Yu Lo\",\n                   
+    \"description\": \"\",\n                    \"texture\": {\n                       
+    \"instanceID\": 0\n                    }\n                },\n               
+    {\n                    \"title\": \"\",\n                    \"imageUrl\": \"\",\n                   
+    \"personality\": \"You are a strong cliff stone face with a worn walking track
+    at your base\",\n                    \"artist\": \"Hui Yu Lo\",\n                   
+    \"description\": \"\",\n                    \"texture\": {\n                       
+    \"instanceID\": 0\n                    }\n                },\n               
+    {\n                    \"title\": \"\",\n                    \"imageUrl\": \"\",\n                   
+    \"personality\": \"You are Lake Geneva on the switzerland side, looking at france
+    and beyond you see italy. There are many boats and dark clouds.\",\n                   
+    \"artist\": \"Hui Yu Lo\",\n                    \"description\": \"\",\n                   
+    \"texture\": {\n                        \"instanceID\": 0\n                   
+    }\n                }\n            ]\n        }\n    ],\n    \"questionsToAsk\":
+    1,\n    \"wisdomToOffer\": 2,\n    \"instructions\": \". A human wants you to
+    repsond to the folloing\",\n    \"Questions\": \"\",\n    \"Wisdom\": \"\"\n}"
+  artManager: {fileID: 552806128}
+--- !u!114 &552806131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552806124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8e4d60777444eb6ba5d86f15b88222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textAsset: {fileID: 4900000, guid: 2b9fffe93ca6d4bbd87369b4d1b73295, type: 3}
 --- !u!1 &592681260
 GameObject:
   m_ObjectHideFlags: 0
@@ -6400,7 +6575,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1464767781}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1003253590
 SpriteRenderer:
@@ -6833,8 +7008,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -36}
+  m_SizeDelta: {x: 0, y: -72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1106200996
 GameObject:
@@ -7330,90 +7505,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200520354}
   m_CullTransparentMesh: 1
---- !u!1 &1235335322
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1235335323}
-  - component: {fileID: 1235335324}
-  m_Layer: 0
-  m_Name: brennanhatton_a_dog_ai_GPT_791a2659-399e-4389-b885-850bbf5a6eed (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1235335323
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235335322}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -274.4961, y: -208.27013, z: 3}
-  m_LocalScale: {x: 0.5386932, y: 0.5386932, z: 0.5386932}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1464767781}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1235335324
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235335322}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 81b3287e3b7a72542816d6d55de39b81, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1240214222
 GameObject:
   m_ObjectHideFlags: 0
@@ -7578,7 +7669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66563b6a4e0c2b74b90057612789d8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 2
+  time: 1
   TimedEvent:
     m_PersistentCalls:
       m_Calls:
@@ -7633,6 +7724,88 @@ RectTransform:
   m_AnchoredPosition: {x: -1.8673096, y: 16}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1279336516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1279336519}
+  - component: {fileID: 1279336518}
+  - component: {fileID: 1279336517}
+  - component: {fileID: 1279336520}
+  m_Layer: 0
+  m_Name: Discord
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1279336517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279336516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a311dc3882fbf4f8d7783b5a04e876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  webhook: {fileID: 1279336518}
+  debugWebHook: {fileID: 1279336518}
+  ids:
+  - id: 
+    name: 
+    contact: 
+    debug: 0
+  USER_STR: 
+--- !u!114 &1279336518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279336516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c51c07a37acfd48b9d95bc52ac419d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  webhook: {fileID: 4900000, guid: e89b9ea4eb899434ea202e2a2933205b, type: 3}
+  startMessage: 1
+--- !u!4 &1279336519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279336516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1001.27374, y: 240.79797, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279336520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279336516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e80bc8237354da0a814aba86694ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gpt3: {fileID: 2128200004}
+  logger: {fileID: 1279336517}
 --- !u!1 &1317006641
 GameObject:
   m_ObjectHideFlags: 0
@@ -8602,7 +8775,7 @@ MeshCollider:
   m_GameObject: {fileID: 1464767777}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -8614,7 +8787,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464767777}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8669,16 +8842,97 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1528967929}
   - {fileID: 544694643}
   - {fileID: 1003253589}
-  - {fileID: 1793448723}
-  - {fileID: 1235335323}
-  - {fileID: 492861444}
-  - {fileID: 1566766932}
   - {fileID: 1835670532}
+  - {fileID: 38001189}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1528967928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1528967929}
+  - component: {fileID: 1528967931}
+  - component: {fileID: 1528967930}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1528967929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528967928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -282.493, y: -205.1117, z: 3}
+  m_LocalScale: {x: 8, y: 8, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1464767781}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1528967930
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528967928}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 625633af7467e4cc08422a525837434f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1528967931
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528967928}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1544844678
 GameObject:
   m_ObjectHideFlags: 0
@@ -8966,90 +9220,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559253760}
   m_CullTransparentMesh: 1
---- !u!1 &1566766931
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1566766932}
-  - component: {fileID: 1566766933}
-  m_Layer: 0
-  m_Name: brennanhatton_a_dog_ai_GPT_791a2659-399e-4389-b885-850bbf5a6eed (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1566766932
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566766931}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -290.2302, y: -208.26514, z: 3}
-  m_LocalScale: {x: 0.5386932, y: 0.5386932, z: 0.5386932}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1464767781}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1566766933
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566766931}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 81b3287e3b7a72542816d6d55de39b81, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1569527082
 GameObject:
   m_ObjectHideFlags: 0
@@ -10552,90 +10722,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
---- !u!1 &1793448722
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1793448723}
-  - component: {fileID: 1793448724}
-  m_Layer: 0
-  m_Name: brennanhatton_a_dog_ai_GPT_791a2659-399e-4389-b885-850bbf5a6eed (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1793448723
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793448722}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -274.4961, y: -202.7539, z: 3}
-  m_LocalScale: {x: 0.5386932, y: 0.5386932, z: 0.5386932}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1464767781}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1793448724
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793448722}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 593dea8cc77922d41a3a229e82c34525, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1799589930
 GameObject:
   m_ObjectHideFlags: 0
@@ -10871,8 +10957,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -75.70624, y: 163.86443}
-  m_SizeDelta: {x: 38.6976, y: 37.7109}
+  m_AnchoredPosition: {x: -90.116516, y: 149.8216}
+  m_SizeDelta: {x: 53.1079, y: 51.7538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1802193447
 MonoBehaviour:
@@ -11134,7 +11220,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1464767781}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1835670534
 SpriteRenderer:
@@ -11203,8 +11289,8 @@ MonoBehaviour:
   delay: 0
   timeToScale: 2.25
   targetScale: {x: 0.5, y: 0.5, z: 0.5}
-  background: {fileID: 544694644}
-  mySprite: {fileID: 1835670534}
+  mainPainting: {fileID: 0}
+  myMeshRenderer: {fileID: 0}
 --- !u!1 &1868600429
 GameObject:
   m_ObjectHideFlags: 0

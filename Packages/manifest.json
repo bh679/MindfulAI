@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.brennanhatton.discord": "https://github.com/bh679/Unity-Discord-Webhook-Tools.git",
     "com.brennanhatton.unitytools": "https://github.com/bh679/Unity-Tools.git",
     "com.unity.collab-proxy": "2.0.0",
     "com.unity.feature.development": "1.0.1",

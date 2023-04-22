@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.brennanhatton.discord": {
+      "version": "https://github.com/bh679/Unity-Discord-Webhook-Tools.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a102b985bd0b20f88b7af64d3eba955dbf500723"
+    },
     "com.brennanhatton.unitytools": {
       "version": "https://github.com/bh679/Unity-Tools.git",
       "depth": 0,

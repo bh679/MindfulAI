@@ -7,13 +7,30 @@ public class PictureTransition : MonoBehaviour
 	public float delay = 2f;
 	public float timeToScale = 5f;
 	public Vector3 targetScale;
+	Texture2D texture;
     
-	public SpriteRenderer background, mySprite;
+	//public SpriteRenderer background, mySprite;
+	public MeshRenderer mainPainting, myMeshRenderer;
+    
+	public void SetTexture(Texture2D _texture)
+	{
+		texture = _texture;
+		myMeshRenderer.material.mainTexture = texture;
+		
+		mainPainting.transform.localScale = new Vector3(
+			mainPainting.transform.localScale.y*texture.width/texture.height,
+			mainPainting.transform.localScale.y,
+			mainPainting.transform.localScale.z);
+		
+		
+		targetScale = mainPainting.transform.localScale;
+		
+	}
     
 	void OnEnable()
 	{
 		this.transform.localScale = Vector3.zero;
-		targetScale = background.transform.localScale;
+		targetScale = mainPainting.transform.localScale;
 		
 		StartCoroutine(_scale());
 	}
@@ -35,7 +52,7 @@ public class PictureTransition : MonoBehaviour
 			this.transform.localScale = targetScale*complete/timeToScale;
 		}
 		
-		background.sprite = mySprite.sprite;
+		mainPainting.material.mainTexture = texture;
 		this.gameObject.SetActive(false);
 	}
 	
