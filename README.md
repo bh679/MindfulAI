@@ -4,6 +4,8 @@ A smart phone app using spech-to-text, open ai's GPT3 and text-to-speech to allo
 
 human voice -> text -> promp -> GPT -> text result -> ai voice.
 
+Built using Unity, Microsoft Congative Services, and OpenAi's GPT3
+
 Designed for MacOS, iOS, Windows and Android.
 
 ## Requirements
