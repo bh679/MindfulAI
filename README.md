@@ -4,6 +4,7 @@ A smart phone app using spech-to-text, open ai's GPT3 and text-to-speech to allo
 
 human voice -> text -> promp -> GPT -> text result -> ai voice.
 
+Designed for MacOS, iOS, Windows and Android.
 
 ## Requirements
 [BrennanHattons Unity Tools](https://github.com/bh679/Unity-Tools) <br />
@@ -32,4 +33,3 @@ OpenAI API Key<br />
 TO do this, click the ? and follow the instructions to allow permissions in Secuirty and Privacy.
 
 - If you are getting this pop-up, be sure to import escentials
-<img width="664" alt="Screenshot 2023-02-24 at 2 42 29 pm" src="https://user-images.githubusercontent.com/2542558/221086735-8f14eb3d-07fe-48c9-92d4-a7eaaae34526.png">
