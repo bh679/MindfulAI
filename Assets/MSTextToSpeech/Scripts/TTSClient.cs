@@ -290,10 +290,56 @@ namespace CognitiveServicesTTS
     public enum VoiceName
 	{
 		enUSJennyNeural = -1,
-		enUSJennyAngry = 0,
-		enUSJennyWhisper = 1,
+	/*enUSJennyAngry = 0,
+		enUSJennyWhisper = 1,*/
 		enUSAriaNeural = -2,
-		enUSAriaAngry = 2,
+		
+		//Australian
+		enAUCarlyNeuralFemale = 0,
+		enAUDarrenNeuralMale = 1,
+		
+		//canadian
+		enCAClaraNeuralFemale = 2,
+		enCALiamNeuralMale = 3,
+		
+		//UK
+		enGBAbbiNeuralFemale = 4,
+		enGBAlfieNeuralMale = 5,
+
+		//Homg Kon English
+		enHKSamNeuralMale = 6,
+		enHKYanNeuralFemale = 7,
+		
+		//English (Ireland)	
+		enIEConnorNeuralMale = 8,
+		enIEEmilyNeuralFemale = 9,
+		
+		//en-IN	English (India)	
+		enINNeerjaNeuralFemale = 10,
+		enINPrabhatNeuralMale = 11,
+		//en-KE	English (Kenya)	
+		enKEAsiliaNeuralFemale = 12,
+		enKEChilembaNeuralMale = 13,
+		//en-NG	English (Nigeria)	
+		enNGAbeoNeuralMale = 14,
+		enNGEzinneNeuralFemale = 15,
+		//en-NZ	English (New Zealand)	
+		enNZMitchellNeuralMale = 16,
+		enNZMollyNeuralFemale = 17,
+		//en-PH	English (Philippines)	
+		enPHJamesNeuralMale = 18,
+		enPHRosaNeuralFemale = 19,
+		//en-SG	English (Singapore)	
+		enSGLunaNeuralFemale = 20,
+		enSGWayneNeuralMale = 21,
+		//en-TZ	English (Tanzania)	
+		enTZElimuNeuralMale = 22,
+		enTZImaniNeuralFemale = -3,
+		
+		
+		
+
+	/*enUSAriaAngry = 2,
 		enUSAriaWhisper = 3,
 		enUSAriaUnfriendly = 4,
 		enUSAriaExcited = 5,
@@ -313,11 +359,62 @@ namespace CognitiveServicesTTS
 		JanUnfriendly = 19,
 		JanWhispering = 20,
 		JasonAngry = 21,
-		JasonWhispering = 22,
+		JasonWhispering = 22,*/
 		deDEAmalaNeural = 23,
 		zhTWHsiaoChenNeural = 24,
 		zhTWHsiaoYuNeural  = 25,
 		zhTWYunJheNeural = 26,
+		wuuCNXiaotongNeuralFemale = 27,
+		wuuCNYunzheNeuralMale = 28,
+		yueCNXiaoMinNeural1Female = 29,
+		yueCNYunSongNeuralMale = 30,
+		
+		//Chinese (Mandarin, Simplified)
+		zhCNXiaochenNeuralFemale = 31, //zh-CN-XiaochenNeural
+		zhCNXiaohanNeuralFemale = 32, //()
+		zhCNXiaomengNeuralFemale = 33,// ()
+		zhCNXiaomoNeuralFemale = 34, // ()
+		zhCNXiaoqiuNeuralFemale = 35 , //()
+		zhCNXiaoruiNeuralFemale = 36 , //()
+		zhCNXiaoshuangNeuralFemaleChild = 37 , //() 
+		zhCNXiaoxiaoNeuralFemale = 38 , // () 
+		zhCNXiaoxuanNeuralFemale = 39 , // () 
+		zhCNXiaoyanNeuralFemale = 40 , // (Female) 
+		zhCNXiaoyiNeuralFemale  = 41 , //(Female) 
+		zhCNXiaoyouNeuralFemaleChild  = 42 , //(Female, Child) 
+		zhCNXiaozhenNeuralFemale = 43 , // (Female)
+		zhCNYunfengNeuralMale = 44 , // (Male) 
+		zhCNYunhaoNeuralMale = 45 , // (Male)
+		zhCNYunjianNeuralMale = 46 , // (Male)
+		zhCNYunxiaNeuralMale = 47 , //(Male) 
+		zhCNYunxiNeuralMale = 48 , //(Male) 
+		zhCNYunyangNeuralMale = 49 , //(Male) 
+		zhCNYunyeNeuralMale = 50 , //(Male) 
+		zhCNYunzeNeuralMale = 51 , //(Male)
+		
+		zhCNhenanYundengNeural2Male = 52,//Chinese (Zhongyuan Mandarin Henan, Simplified)
+		
+		zhCNliaoningXiaobeiNeural1Female = 53, //Chinese (Northeastern Mandarin, Simplified)
+		
+		//Chinese (Zhongyuan Mandarin Shaanxi, Simplified)
+		zhCNshaanxiXiaoniNeuralFemale = 54,
+		
+		//Chinese (Jilu Mandarin, Simplified)
+		zhCNshandongYunxiangNeural2Male = 55,
+		
+		//Chinese (Southwestern Mandarin, Simplified)
+		zhCNsichuanYunxiNeuralMale = 56,
+		
+		//Chinese (Cantonese, Traditional)
+		zhHKHiuGaaiNeuralFemale = 57,
+		zhHKHiuMaanNeuralFemale = 58,
+		zhHKWanLungNeural1Male = 59,
+		
+		
+		//French (France)	
+		frFRAlainNeuralMale = 60,
+		frFRBrigitteNeuralFemale = 61,
+		
 		Total = 24
 		/*zh-TW-HsiaoChenNeural (Female)
 		zh-TW-HsiaoYuNeural (Female)
@@ -486,13 +583,82 @@ namespace CognitiveServicesTTS
             {
             case VoiceName.enUSJennyNeural:
 	            return "en-US-JennyNeural";
-            case VoiceName.enUSJennyAngry:
+	            /*case VoiceName.enUSJennyAngry:
 	            return "en-US-AriaAngry";
             case VoiceName.enUSJennyWhisper:
-	            return "en-US-JennyWhisper";
+	            return "en-US-JennyWhisper";*/
             case VoiceName.enUSAriaNeural:
 	            return "en-US-AriaNeural";
-            case VoiceName.enUSAriaAngry:
+	            
+            case VoiceName.enAUCarlyNeuralFemale:
+	            return "en-AU-CarlyNeural";
+            case VoiceName.enAUDarrenNeuralMale:
+	            return "en-AU-DarrenNeural";
+	            
+            case VoiceName.enCAClaraNeuralFemale:
+	            return "en-CA-ClaraNeural";
+            case VoiceName.enCALiamNeuralMale:
+	            return "en-CA-LiamNeural";
+	            
+            case VoiceName.enGBAbbiNeuralFemale:
+	            return "en-GB-AbbiNeural";
+            case VoiceName.enGBAlfieNeuralMale:
+	            return "en-GB-AlfieNeural";
+	            
+            case VoiceName.enHKSamNeuralMale:
+	            return "en-HK-SamNeural";
+            case VoiceName.enHKYanNeuralFemale:
+	            return "en-HK-YanNeural";
+	            
+	            //English (Ireland)	
+            case VoiceName.enIEConnorNeuralMale:
+	            return "en-IE-ConnorNeural";
+            case VoiceName.enIEEmilyNeuralFemale:
+	            return "enIEEmilyNeural";
+		
+		            //en-IN	English (India)	
+            case VoiceName.enINNeerjaNeuralFemale:
+	            return "en-IN-NeerjaNeurall";
+            case VoiceName.enINPrabhatNeuralMale:
+	            return "enINPrabhatNeural";
+	            
+		            //en-KE	English (Kenya)	
+            case VoiceName.enKEAsiliaNeuralFemale:
+	            return "en-KE-AsiliaNeural";
+            case VoiceName.enKEChilembaNeuralMale:
+	            return "en-KE-ChilembaNeural";
+	            
+		            //en-NG	English (Nigeria)	
+            case VoiceName.enNGAbeoNeuralMale:
+	            return "en-NG-AbeoNeural";
+            case VoiceName.enNGEzinneNeuralFemale:
+	            return "en-NG-EzinneNeural";
+	            
+		            //en-NZ	English (New Zealand)	
+            case VoiceName.enNZMitchellNeuralMale:
+	            return "en-NZ-MitchellNeural";
+            case VoiceName.enNZMollyNeuralFemale:
+	            return "en-NZ-MollyNeural";
+	            
+		            //en-PH	English (Philippines)	
+            case VoiceName.enPHJamesNeuralMale:
+	            return "en-PH-JamesNeural";
+            case VoiceName.enPHRosaNeuralFemale:
+	            return "en-PH-RosaNeural";
+	            
+		            //en-SG	English (Singapore)	
+            case VoiceName.enSGLunaNeuralFemale:
+	            return "en-SG-LunaNeural";
+            case VoiceName.enSGWayneNeuralMale:
+	            return "en-SG-WayneNeural";
+	            
+		            //en-TZ	English (Tanzania)	
+            case VoiceName.enTZElimuNeuralMale:
+	            return "en-TZ-ElimuNeural";
+            case VoiceName.enTZImaniNeuralFemale:
+	            return "en-TZ-ImaniNeural";
+	            
+	            /*case VoiceName.enUSAriaAngry:
 	            return "en-US-AriaAngry";
             case VoiceName.enUSAriaExcited:
 	            return "en-US-AriaExcited";
@@ -529,7 +695,7 @@ namespace CognitiveServicesTTS
             case VoiceName.JasonAngry:
 	            return "en-US-JasonAngry";
             case VoiceName.JasonWhispering:
-	            return "en-US-JasonWhispering";
+	            return "en-US-JasonWhispering";*/
             case VoiceName.deDEAmalaNeural:
 	            return "de-DE-AmalaNeural";
             case VoiceName.zhTWHsiaoChenNeural:
@@ -538,6 +704,79 @@ namespace CognitiveServicesTTS
 	            return "zh-TW-HsiaoYuNeural";
             case VoiceName.zhTWYunJheNeural:
 	            return "zh-TW-YunJheNeural";
+            case VoiceName.wuuCNXiaotongNeuralFemale:
+	            return "wuu-CN-XiaotongNeural1";
+            case VoiceName.wuuCNYunzheNeuralMale:
+	            return "wuu-CN-YunzheNeural1";
+            case VoiceName.yueCNXiaoMinNeural1Female:
+	            return "yue-CN-XiaoMinNeural1";
+            case VoiceName.yueCNYunSongNeuralMale:
+	            return "yue-CN-YunSongNeural";
+	            
+            case VoiceName.zhCNXiaochenNeuralFemale:
+	            return "zh-CN-XiaochenNeural";
+            case VoiceName.zhCNXiaohanNeuralFemale:
+	            return "zh-CN-XiaohanNeural";
+            case VoiceName.zhCNXiaomengNeuralFemale:
+	            return "zh-CN-XiaomengNeural";
+            case VoiceName.zhCNXiaoruiNeuralFemale:
+	            return "zh-CN-XiaoruiNeural";
+            case VoiceName.zhCNXiaoshuangNeuralFemaleChild:
+	            return "zh-CN-XiaoshuangNeural";
+            case VoiceName.zhCNXiaoxiaoNeuralFemale:
+	            return "zh-CN-XiaoxiaoNeural";
+            case VoiceName.zhCNXiaoxuanNeuralFemale:
+	            return "zh-CN-XiaoxuanNeural";
+            case VoiceName.zhCNXiaoyanNeuralFemale:
+	            return "zh-CN-XiaoyanNeural";
+            case VoiceName.zhCNXiaoyiNeuralFemale:
+	            return "zh-CN-XiaoyiNeural";
+            case VoiceName.zhCNXiaoyouNeuralFemaleChild:
+	            return "zh-CN-XiaoyouNeural";
+            case VoiceName.zhCNXiaozhenNeuralFemale:
+	            return "zh-CN-XiaozhenNeural";
+            case VoiceName.zhCNYunfengNeuralMale:
+	            return "zh-CN-YunfengNeural";
+            case VoiceName.zhCNYunhaoNeuralMale:
+	            return "zh-CN-YunhaoNeural";
+            case VoiceName.zhCNYunjianNeuralMale:
+	            return "zh-CN-YunjianNeural";
+            case VoiceName.zhCNYunxiaNeuralMale:
+	            return "zh-CN-YunxiaNeural";
+            case VoiceName.zhCNYunxiNeuralMale:
+	            return "zh-CN-YunxiNeural";
+            case VoiceName.zhCNYunyangNeuralMale:
+	            return "zh-CN-YunyangNeural";
+            case VoiceName.zhCNYunyeNeuralMale:
+	            return "zh-CN-YunyeNeural";
+	            
+            case VoiceName.zhCNYunzeNeuralMale:
+	            return "zh-CN-YunzeNeural";
+	            
+            case VoiceName.zhCNliaoningXiaobeiNeural1Female:
+	            return "zh-CN-liaoning-XiaobeiNeural1";
+	            
+            case VoiceName.zhCNshaanxiXiaoniNeuralFemale:
+	            return "zh-CN-shaanxi-XiaoniNeural";
+	            
+            case VoiceName.zhCNshandongYunxiangNeural2Male:
+	            return "zh-CN-shandong-YunxiangNeural2 (Male)";
+	            
+            case VoiceName.zhCNsichuanYunxiNeuralMale:
+	            return "zh-CN-sichuan-YunxiNeural";
+	            
+            case VoiceName.zhHKHiuGaaiNeuralFemale:
+	            return "zh-HK-HiuGaaiNeural";
+            case VoiceName.zhHKHiuMaanNeuralFemale:
+	            return "zh-HK-HiuMaanNeural";
+            case VoiceName.zhHKWanLungNeural1Male:
+	            return "zh-HK-WanLungNeural1";
+	            
+            case VoiceName.frFRAlainNeuralMale:
+	            return "frzFRzAlainNeural";
+            case VoiceName.frFRBrigitteNeuralFemale:
+	            return "frzFRzBrigitteNeural";
+	            
             }
 		    return "en-US-JennyNeural";
         }
