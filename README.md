@@ -14,6 +14,8 @@ Designed for MacOS, iOS, Windows and Android.
 MS Cognative Services API Key (trial / paid) <br />
 OpenAI API Key (paid)<br />
 
+## Recommended (but optional)
+[CleanFlatIcons](https://assetstore.unity.com/packages/2d/gui/icons/clean-flat-icons-98117)
 
 ## Pre-Installed <br />
 [MS Congantive Services](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/unity/text-to-speech/README.md) <br />
