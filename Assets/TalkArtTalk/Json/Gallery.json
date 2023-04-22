@@ -1,0 +1,153 @@
+{
+    "paintingGroups": [
+        {
+            "name": "West Elevator Tower",
+            "paintings": [
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "personality": "You are altumn, life at its most prosperous, mature beautiful and rich. You face impending withering, but it is not sad because life is immortal and reincartion is enternal ",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "personality": "You are winter.",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "personality": "You are summer",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "title": "",
+                    "imageUrl": "",
+                    "personality": "You are spring",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "personality": "You are the view of Lake Geneva, and a small town.",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Entrance",
+            "paintings": []
+        },
+        {
+            "name": "Hall 1",
+            "paintings": []
+        },
+        {
+            "name": "Hall 2",
+            "paintings": []
+        },
+        {
+            "name": "Hall 3",
+            "paintings": []
+        },
+        {
+            "name": "Hall 4",
+            "paintings": []
+        },
+        {
+            "name": "Last Room",
+            "paintings": []
+        },
+        {
+            "name": "East Elevator Tower",
+            "paintings": [
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "personality": "You are an autum forrest. You are gold, and orange and in the middle of autum. You are a ground full of leaves, you thuck tree trunks.",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "personality": "You are a talented street performer playing a chello. You smile slightly with sad eyes. ",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/75C53398-A7E6-4FD2-BB8D-AEB14F122F92-scaled.jpg",
+                    "personality": "You are a tall woody forrest with no leaves. A winter sunset.",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "personality": "You are a peaceful lake in the morning sun surroudned by lots of swans, creating a special moment of magic and calmness.",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "personality": "You are a strong cliff stone face with a worn walking track at your base",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "personality": "You are Lake Geneva on the switzerland side, looking at france and beyond you see italy. There are many boats and dark clouds.",
+                    "artist": "Hui Yu Lo",
+                    "description": "",
+                    "texture": {
+                        "instanceID": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "questionsToAsk": 1,
+    "wisdomToOffer": 2,
+    "instructions": ". A human wants you to repsond to the folloing",
+    "Questions": "",
+    "Wisdom": ""
+}

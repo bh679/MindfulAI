@@ -357,7 +357,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38001188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -282.493, y: -204.9699, z: 3}
+  m_LocalPosition: {x: -282.493, y: -204.9699, z: 2.8}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -401,7 +401,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 578cfd45fa9ca410daa8233a2133cc6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3245,6 +3245,7 @@ GameObject:
   - component: {fileID: 552806130}
   - component: {fileID: 552806129}
   - component: {fileID: 552806131}
+  - component: {fileID: 552806132}
   m_Layer: 0
   m_Name: Speech to Text
   m_TagString: Untagged
@@ -3562,6 +3563,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAsset: {fileID: 4900000, guid: 2b9fffe93ca6d4bbd87369b4d1b73295, type: 3}
+--- !u!114 &552806132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552806124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863dd57c939624cd8a87ef02a86a1dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: http://13.237.241.168/Go/GalleryJson
+  artManager: {fileID: 552806128}
 --- !u!1 &592681260
 GameObject:
   m_ObjectHideFlags: 0

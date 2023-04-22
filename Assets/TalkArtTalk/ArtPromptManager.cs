@@ -91,7 +91,7 @@ public class ArtPromptManager : MonoBehaviour
 		GPTGen = this.GetComponent<MsCogVoiceToGPT>();
 	}
 	
-	void Start()
+	public void Setup()
 	{
 		for(int i = 0; i < galleryData.paintingGroups.Length; i++)
 		{
@@ -102,7 +102,6 @@ public class ArtPromptManager : MonoBehaviour
 				LoadImage(galleryData.paintingGroups[i].paintings[p]);
 			}
 		}
-		
 		
 		while(galleryData.paintingGroups[groupId].paintings.Length == 0)
 			groupId = (groupId + 1) % galleryData.paintingGroups.Length;
