@@ -27,7 +27,8 @@ public class Painting
 	public string personality;
 	public string artist;
 	public string description;
-	public Texture2D texture; 
+	Texture2D texture; 
+	public Texture2D Texture {get; set;} 
 	
 	//public Sprite Image {get; set;}
 	
@@ -109,7 +110,7 @@ public class ArtPromptManager : MonoBehaviour
 		GPTGen.promptWrapper.prePrompt = CurrentPainting.personality + galleryData.instructions + galleryData.Questions + languagePrompt;
 	
 		responseReader.wrapper.postPrompt = "";
-		pictureChanger.SetTexture(CurrentPainting.texture);//.background.sprite = CurrentPainting.Image;
+		pictureChanger.SetTexture(CurrentPainting.Texture);//.background.sprite = CurrentPainting.Image;
 	}
 	
 	public void AskQuestion()
@@ -152,9 +153,9 @@ public class ArtPromptManager : MonoBehaviour
 		questionId = 0;
 			
 		Debug.Log(CurrentPainting);
-		Debug.Log(CurrentPainting.texture);
+		Debug.Log(CurrentPainting.Texture);
 		Debug.Log(pictureChanger);
-		pictureChanger.SetTexture(CurrentPainting.texture);//pictureChanger.mySprite.sprite = CurrentPainting.Image;
+		pictureChanger.SetTexture(CurrentPainting.Texture);//pictureChanger.mySprite.sprite = CurrentPainting.Image;
 		pictureChanger.gameObject.SetActive(true);
 		responseReader.wrapper.postPrompt = "";
 		
@@ -183,7 +184,7 @@ public class ArtPromptManager : MonoBehaviour
 			
 		questionId = 0;
 			
-		pictureChanger.SetTexture(CurrentPainting.texture);
+		pictureChanger.SetTexture(CurrentPainting.Texture);
 		//pictureChanger.mySprite.sprite = CurrentPainting.Image;
 		pictureChanger.gameObject.SetActive(true);
 		responseReader.wrapper.postPrompt = "";
@@ -220,13 +221,13 @@ public class ArtPromptManager : MonoBehaviour
 		{
 			Texture2D texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
 			//Sprite sprite = Sprite.Create(texture, new Rect(0,0, texture.width, texture.height), new Vector2());
-			painting.texture  = texture;
+			painting.Texture  = texture;
 			Debug.Log("Success " + texture.width + ":" + texture.height);
 		}
 	
 		//	painting.image = Sprite.Create(www.texture, new Rect(0, 0, www.texture.width, www.texture.height), new Vector2(0, 0));
 	
-		Debug.Log(painting.texture);
+		Debug.Log(painting.Texture);
 	}
 }
 

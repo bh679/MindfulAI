@@ -5,7 +5,7 @@
             "paintings": [
                 {
                     "title": "",
-                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/CC5F9E4B-0FFA-41BE-A09F-609B69FB0895-scaled.jpg",
                     "personality": "You are altumn, life at its most prosperous, mature beautiful and rich. You face impending withering, but it is not sad because life is immortal and reincartion is enternal ",
                     "artist": "Hui Yu Lo",
                     "description": "",
@@ -15,7 +15,7 @@
                 },
                 {
                     "title": "",
-                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/846ADC02-A31B-4035-AC07-3230BC41302A-scaled.jpg",
                     "personality": "You are winter.",
                     "artist": "Hui Yu Lo",
                     "description": "",
@@ -25,7 +25,7 @@
                 },
                 {
                     "title": "",
-                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/A269D9ED-DE9D-489D-8571-E02783DB5373-scaled.jpg",
                     "personality": "You are summer",
                     "artist": "Hui Yu Lo",
                     "description": "",
@@ -35,7 +35,7 @@
                 },
                 {
                     "title": "",
-                    "imageUrl": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/C4557DBA-E5A0-4A99-950C-DAF59D186C49-scaled.jpg",
                     "personality": "You are spring",
                     "artist": "Hui Yu Lo",
                     "description": "",
@@ -84,7 +84,7 @@
             "paintings": [
                 {
                     "title": "",
-                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/82E7430A-B1BC-43A6-AB64-04E283E9E416-scaled.jpg",
                     "personality": "You are an autum forrest. You are gold, and orange and in the middle of autum. You are a ground full of leaves, you thuck tree trunks.",
                     "artist": "Hui Yu Lo",
                     "description": "",
@@ -94,7 +94,7 @@
                 },
                 {
                     "title": "",
-                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/D995C8C8-DCDA-4D92-935F-646814050F20-scaled.jpg",
                     "personality": "You are a talented street performer playing a chello. You smile slightly with sad eyes. ",
                     "artist": "Hui Yu Lo",
                     "description": "",
@@ -114,7 +114,7 @@
                 },
                 {
                     "title": "",
-                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/7C3C6D15-A708-4870-8A1D-7F30489B8205-scaled.jpg",
                     "personality": "You are a peaceful lake in the morning sun surroudned by lots of swans, creating a special moment of magic and calmness.",
                     "artist": "Hui Yu Lo",
                     "description": "",
@@ -124,7 +124,7 @@
                 },
                 {
                     "title": "",
-                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/36D47D5C-D7FF-4033-AC03-C028817671AC-scaled.jpg",
                     "personality": "You are a strong cliff stone face with a worn walking track at your base",
                     "artist": "Hui Yu Lo",
                     "description": "",
@@ -134,7 +134,7 @@
                 },
                 {
                     "title": "",
-                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/1DB465B3-5AE1-48F7-9894-DF890AD85A82-scaled.jpg",
                     "personality": "You are Lake Geneva on the switzerland side, looking at france and beyond you see italy. There are many boats and dark clouds.",
                     "artist": "Hui Yu Lo",
                     "description": "",
