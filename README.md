@@ -1,4 +1,4 @@
-# Talk Art Talk
+# MindfulAI
 
 A smart phone app using spech-to-text, open ai's GPT3 and text-to-speech to allow you to talk to art and have the ai respond on their behalf.
 
