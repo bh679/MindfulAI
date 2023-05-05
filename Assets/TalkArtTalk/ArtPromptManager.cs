@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using BrennanHatton.AI;
+using UnityEngine.Video;
 
 //You are an autum forrest. You are gold, and orange and in the middle of autum. You are a ground full of leaves, you thuck tree trunks. And a human wants you to repsond to the folloing
 
@@ -30,8 +31,32 @@ public class Painting
 	Texture2D texture; 
 	public Texture2D Texture {get; set;} 
 	
-	//public Sprite Image {get; set;}
+	bool videoSet = false, isVideo;
 	
+	//public Sprite Image {get; set;}
+	public bool IsVideo {
+		get 
+		{
+			if(!videoSet)
+				return SetIsVideo();
+				
+			return isVideo;
+		}
+	}
+	
+	
+	bool SetIsVideo()
+	{
+		videoSet = true;
+		string[] str  = imageUrl.ToLower().Split(".");
+		
+		Debug.Log(str[1]);
+		
+		if(str[1] == "mp4")
+			return true;
+			
+		return false;
+	}
 }
 
 [System.Serializable]
@@ -51,9 +76,11 @@ public class PaintingGroup
 	
 	public void Setup()
 	{
+		Debug.Log("Setup");
 		if(paintings == null)
 			return;
 			
+		Debug.Log("Setup");
 		paintOrder = new int[paintings.Length];
 		
 		for(int i = 0 ;i < paintOrder.Length; i++)
@@ -71,12 +98,12 @@ public class ArtPromptManager : MonoBehaviour
 	
 	public int paintingId = 0, questionId = 0;
 	
-	//public PaintingGroup[] paintingGroups;
 	public GalleryData galleryData;
 	public int groupId;
 	
 	public string[] Instruction;
 	public string languagePrompt;
+	public string valuesPrompt;
 	
 	public DropDownToMSCogLanugage lanugage;
 	
@@ -94,8 +121,10 @@ public class ArtPromptManager : MonoBehaviour
 	
 	public void Setup()
 	{
+		Debug.Log("Setup");
 		for(int i = 0; i < galleryData.paintingGroups.Length; i++)
 		{
+			Debug.Log("Setup");
 			galleryData.paintingGroups[i].Setup();
 			
 			for(int p = 0; p < galleryData.paintingGroups[i].paintings.Length; p++)
@@ -107,10 +136,11 @@ public class ArtPromptManager : MonoBehaviour
 		while(galleryData.paintingGroups[groupId].paintings.Length == 0)
 			groupId = (groupId + 1) % galleryData.paintingGroups.Length;
 			
-		GPTGen.promptWrapper.prePrompt = CurrentPainting.personality + galleryData.instructions + galleryData.Questions + languagePrompt;
+		GPTGen.promptWrapper.prePrompt = CurrentPainting.personality  + valuesPrompt + "The artist is " + CurrentPainting.artist + galleryData.instructions + galleryData.Questions + languagePrompt;
 	
 		responseReader.wrapper.postPrompt = "";
 		pictureChanger.SetTexture(CurrentPainting.Texture);//.background.sprite = CurrentPainting.Image;
+		LoadImage(CurrentPainting);
 	}
 	
 	public void AskQuestion()
@@ -155,7 +185,11 @@ public class ArtPromptManager : MonoBehaviour
 		Debug.Log(CurrentPainting);
 		Debug.Log(CurrentPainting.Texture);
 		Debug.Log(pictureChanger);
-		pictureChanger.SetTexture(CurrentPainting.Texture);//pictureChanger.mySprite.sprite = CurrentPainting.Image;
+		
+		if(CurrentPainting.IsVideo)
+			pictureChanger.SetVideo(CurrentPainting.imageUrl);
+		else
+			pictureChanger.SetTexture(CurrentPainting.Texture);//pictureChanger.mySprite.sprite = CurrentPainting.Image;
 		pictureChanger.gameObject.SetActive(true);
 		responseReader.wrapper.postPrompt = "";
 		
@@ -199,35 +233,23 @@ public class ArtPromptManager : MonoBehaviour
 		
 		Debug.Log(painting.imageUrl);
 		
-		/*WWW www = new WWW(painting.imageUrl);
-		yield return www;
-		
-		Texture2D texture = new Texture2D(64,64);*/
-		/*Debug.Log(www);
-		Debug.Log(www.text);
-		Debug.Log(www.Current);
-		Debug.Log(www.bytes);
-		Debug.Log(www.texture);*/
-		//www.LoadImageIntoTexture(texture as Texture2D);
-		
-		UnityWebRequest www = UnityWebRequestTexture.GetTexture(painting.imageUrl);
-		yield return www.SendWebRequest();
-
-		if (www.isNetworkError || www.isHttpError)
+		if(painting.IsVideo == false)
 		{
-			Debug.LogError(www.error + painting.imageUrl);
-		}
-		else
-		{
-			Texture2D texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
-			//Sprite sprite = Sprite.Create(texture, new Rect(0,0, texture.width, texture.height), new Vector2());
-			painting.Texture  = texture;
-			Debug.Log("Success " + texture.width + ":" + texture.height);
-		}
+		
+			UnityWebRequest www = UnityWebRequestTexture.GetTexture(painting.imageUrl);
+			yield return www.SendWebRequest();
 	
-		//	painting.image = Sprite.Create(www.texture, new Rect(0, 0, www.texture.width, www.texture.height), new Vector2(0, 0));
-	
-		Debug.Log(painting.Texture);
+			if (www.isNetworkError || www.isHttpError)
+				Debug.LogError(www.error + painting.imageUrl);
+			else
+			{
+				Texture2D texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+				painting.Texture  = texture;
+				Debug.Log("Success " + texture.width + ":" + texture.height);
+			}
+		
+			Debug.Log(painting.Texture);
+		}
 	}
 }
 

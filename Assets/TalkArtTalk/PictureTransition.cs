@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Video;
 using UnityEngine;
 
 public class PictureTransition : MonoBehaviour
@@ -8,9 +9,63 @@ public class PictureTransition : MonoBehaviour
 	public float timeToScale = 5f;
 	public Vector3 targetScale;
 	Texture2D texture;
+	public VideoPlayer videoPlayer;
+	public AudioSource audioSource;
     
 	//public SpriteRenderer background, mySprite;
 	public MeshRenderer mainPainting, myMeshRenderer;
+    
+	void Reset()
+	{
+		videoPlayer = this.GetComponent<VideoPlayer>();
+	}
+	
+    
+	public void SetVideo(string url)
+	{
+		StartCoroutine(DownloadAndPlayVideo(url));
+	}
+	
+	private IEnumerator DownloadAndPlayVideo(string videoUrl)
+	{
+		// Download video
+		using (var www = new UnityEngine.Networking.UnityWebRequest(videoUrl, UnityEngine.Networking.UnityWebRequest.kHttpVerbGET))
+		{
+			www.downloadHandler = new UnityEngine.Networking.DownloadHandlerBuffer();
+			yield return www.SendWebRequest();
+
+			if (www.result == UnityEngine.Networking.UnityWebRequest.Result.ConnectionError || www.result == UnityEngine.Networking.UnityWebRequest.Result.ProtocolError)
+			{
+				Debug.LogError("Error downloading video: " + www.error);
+			}
+			else
+			{
+				// Setup VideoPlayer
+				videoPlayer.source = VideoSource.Url;
+				videoPlayer.url = www.url;
+				videoPlayer.renderMode = VideoRenderMode.CameraFarPlane;
+				videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+				videoPlayer.SetTargetAudioSource(0, audioSource);
+
+				// Play video
+				videoPlayer.Prepare();
+				videoPlayer.prepareCompleted += PrepareCompleted;
+				videoPlayer.loopPointReached += LoopPointReached;
+			}
+		}
+	}
+
+	private void PrepareCompleted(VideoPlayer source)
+	{
+		source.Play();
+		audioSource.Play();
+	}
+
+	private void LoopPointReached(VideoPlayer source)
+	{
+		source.Stop();
+		audioSource.Stop();
+	}
     
 	public void SetTexture(Texture2D _texture)
 	{
