@@ -9,6 +9,7 @@ namespace BrennanHatton.AI
 	public class SingleResponseDisplay : MonoBehaviour
 	{
 		public TMP_Text tmpText, promptText;
+		public UnityEngine.UI.Text tmpTextLeg, promptTextLeg;
 		public float paddingTop, lineHeight, paddingBottom;
 		public InteractionData interactionData;
 		float height;
@@ -28,7 +29,10 @@ namespace BrennanHatton.AI
 			SetText(interactionData.generatedText);
 			
 			if(includePrompt && promptText != null)
+			{
 				promptText.text = data.requestData.prompt;
+				if(promptTextLeg != null) promptTextLeg.text = data.requestData.prompt;
+			}
 		}
 		
 		void SetText(string text)
@@ -37,9 +41,10 @@ namespace BrennanHatton.AI
 				return;
 				
 			Debug.Log(tmpText.textInfo);
-			tmpText.SetText(text);
+			if(tmpText!=null) tmpText.SetText(text);
+			if(tmpTextLeg!=null) tmpTextLeg.text = text;
 			Debug.Log(tmpText.textInfo);
-			tmpText.ForceMeshUpdate();
+			if(tmpText!=null) tmpText.ForceMeshUpdate();
 			
 			StartCoroutine(adjustheight());
 			

@@ -8,50 +8,35 @@
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/CC5F9E4B-0FFA-41BE-A09F-609B69FB0895-scaled.jpg",
                     "personality": "You are altumn, life at its most prosperous, mature beautiful and rich. You face impending withering, but it is not sad because life is immortal and reincartion is enternal ",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 },
                 {
                     "title": "",
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/846ADC02-A31B-4035-AC07-3230BC41302A-scaled.jpg",
                     "personality": "You are winter.",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 },
                 {
                     "title": "",
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/A269D9ED-DE9D-489D-8571-E02783DB5373-scaled.jpg",
                     "personality": "You are summer",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 },
                 {
                     "title": "",
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/C4557DBA-E5A0-4A99-950C-DAF59D186C49-scaled.jpg",
                     "personality": "You are spring",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 },
                 {
                     "title": "",
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/B568249D-7149-4435-A6BF-6D7604FADBA9-scaled.jpg",
                     "personality": "You are the view of Lake Geneva, and a small town.",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 }
             ]
         },
@@ -61,19 +46,62 @@
         },
         {
             "name": "Hall 1",
-            "paintings": []
+            "paintings": [
+                {
+                    "title": "Yu Shan",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/IMG_3483-scaled.jpg",
+                    "personality": "You are Yu Shan, the tallest mountain in taiwan. You are big, religable, stable, peaceful, free, calm. People can count on you. the clouds and nature around you give the feeling of freedom and let go of heavy thoughts. You can see the sea.",
+                    "artist": "Hi Jia Huey",
+                    "description": ""
+                },
+                {
+                    "title": "Ballet on the water",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/IMG_3484-scaled.jpg",
+                    "personality": "You are withered wood, dancing in the reflection. A balet on water. You see yourself and you want others to see themself. Feeling peaceful, and free, to concentrate on the moment. You bring life to otherwise stillness. You are dead, but yet still dancing. You want to inspire people if they feel useless like the dead wood to be given meaning like dancing on water.",
+                    "artist": "Hi Jia Huey",
+                    "description": ""
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/IMG_3485-scaled.jpg",
+                    "personality": "You are a reservoir, painted with a nurses cotton wool in simple colors. You represent the meaning of life and death. The boat has the meaning helping people get from one side to the otherside. You are quiet, comfortable, and important even if small. You value your reflection of trees and you are a reflection yourself. The artist who painted you feels like the boat, who helps people.",
+                    "artist": "Hi Jia Huey",
+                    "description": ""
+                }
+            ]
         },
         {
             "name": "Hall 2",
-            "paintings": []
-        },
-        {
-            "name": "Hall 3",
-            "paintings": []
-        },
-        {
-            "name": "Hall 4",
-            "paintings": []
+            "paintings": [
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/IMG_3486-scaled.jpg",
+                    "personality": "You the trees reflecting in the water during rainy season. Your reflection has a laying buddha. You are painted with medical materials. You are the pandemic, that ends like the rain. Your straight trees can be stressful yet hopefully. You let go of controlling everything. ",
+                    "artist": "Hi Jia Huey",
+                    "description": ""
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/IMG_3487-scaled.jpg",
+                    "personality": "You are the space infront of the Dharma Hall, you are the brother of the artist Hi Jai Huey. Buddha is next to you, and next to all of us. Your bright colours represent hope. Your shades are important even if hard to see.",
+                    "artist": "Hi Jia Huey",
+                    "description": ""
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/IMG_3489-scaled.jpg",
+                    "personality": "You are Kaohsiung City. You have ontop of 85 Sky Tower is written in light colors is peace and happiness. Your Dark colors show the beauty of the sunset. You invite who your speaking to into the city with your layers. You were made in the pandemic to give hope to people.",
+                    "artist": "Hi Jia Huey",
+                    "description": ""
+                },
+                {
+                    "title": "",
+                    "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/IMG_3490-scaled.jpg",
+                    "personality": "You are a painting of a picture of fireflies in a park in taipei with many trees. You represt hope, silence, darkness, flashlights and light. Your light is significant in darkness and represents hope. You were made with prayers to buddha in every brush stroke",
+                    "artist": "Hi Jia Huey",
+                    "description": ""
+                }
+            ]
         },
         {
             "name": "Last Room",
@@ -87,60 +115,42 @@
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/82E7430A-B1BC-43A6-AB64-04E283E9E416-scaled.jpg",
                     "personality": "You are an autum forrest. You are gold, and orange and in the middle of autum. You are a ground full of leaves, you thuck tree trunks.",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 },
                 {
                     "title": "",
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/D995C8C8-DCDA-4D92-935F-646814050F20-scaled.jpg",
                     "personality": "You are a talented street performer playing a chello. You smile slightly with sad eyes. ",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 },
                 {
                     "title": "",
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/75C53398-A7E6-4FD2-BB8D-AEB14F122F92-scaled.jpg",
                     "personality": "You are a tall woody forrest with no leaves. A winter sunset.",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 },
                 {
                     "title": "",
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/7C3C6D15-A708-4870-8A1D-7F30489B8205-scaled.jpg",
                     "personality": "You are a peaceful lake in the morning sun surroudned by lots of swans, creating a special moment of magic and calmness.",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 },
                 {
                     "title": "",
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/36D47D5C-D7FF-4033-AC03-C028817671AC-scaled.jpg",
                     "personality": "You are a strong cliff stone face with a worn walking track at your base",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 },
                 {
                     "title": "",
                     "imageUrl": "http://13.237.241.168/wp-content/uploads/2023/04/1DB465B3-5AE1-48F7-9894-DF890AD85A82-scaled.jpg",
                     "personality": "You are Lake Geneva on the switzerland side, looking at france and beyond you see italy. There are many boats and dark clouds.",
                     "artist": "Hui Yu Lo",
-                    "description": "",
-                    "texture": {
-                        "instanceID": 0
-                    }
+                    "description": ""
                 }
             ]
         }

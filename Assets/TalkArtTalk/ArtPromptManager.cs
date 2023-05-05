@@ -8,15 +8,22 @@ using UnityEngine.Video;
 //You are an autum forrest. You are gold, and orange and in the middle of autum. You are a ground full of leaves, you thuck tree trunks. And a human wants you to repsond to the folloing
 
 [System.Serializable]
+public class WeightedPrompt
+{
+	public float weight;
+	public string prompt;
+}
+
+[System.Serializable]
 public class GalleryData
 {
 	public PaintingGroup[] paintingGroups;
 	public int questionsToAsk = 1, wisdomToOffer = 2;
 	
 	
-	public string instructions = ". A human wants you to repsond to the folloing";
+	public string instructions = ". A visitor wants you to repsond to the following: ";
 	public string Questions,
-		Wisdom;
+		Wisdom, valuesPrompt;
 }
 
 [System.Serializable]
@@ -30,6 +37,16 @@ public class Painting
 	public string description;
 	Texture2D texture; 
 	public Texture2D Texture {get; set;} 
+	
+	string _prompt = null;
+	public string Prompt {
+		get{
+			if(_prompt == null)
+				_prompt = personality + ". Youre called " + title + ". The artist is " + artist + ".";
+				
+			return _prompt; 
+		}
+	}
 	
 	bool videoSet = false, isVideo;
 	
@@ -103,7 +120,6 @@ public class ArtPromptManager : MonoBehaviour
 	
 	public string[] Instruction;
 	public string languagePrompt;
-	public string valuesPrompt;
 	
 	public DropDownToMSCogLanugage lanugage;
 	
@@ -136,22 +152,22 @@ public class ArtPromptManager : MonoBehaviour
 		while(galleryData.paintingGroups[groupId].paintings.Length == 0)
 			groupId = (groupId + 1) % galleryData.paintingGroups.Length;
 			
-		GPTGen.promptWrapper.prePrompt = CurrentPainting.personality  + valuesPrompt + "The artist is " + CurrentPainting.artist + galleryData.instructions + galleryData.Questions + languagePrompt;
+		GPTGen.promptWrapper.prePrompt = CurrentPainting.Prompt + galleryData.instructions + galleryData.Questions + languagePrompt + galleryData.valuesPrompt;
 	
 		responseReader.wrapper.postPrompt = "";
 		pictureChanger.SetTexture(CurrentPainting.Texture);//.background.sprite = CurrentPainting.Image;
-		LoadImage(CurrentPainting);
+		//LoadImage(CurrentPainting);
 	}
 	
 	public void AskQuestion()
 	{
 		if(questionId < galleryData.questionsToAsk)
-			GPTGen.promptWrapper.prePrompt = CurrentPainting.personality + galleryData.instructions + galleryData.Questions + languagePrompt;
+			GPTGen.promptWrapper.prePrompt = CurrentPainting.Prompt + galleryData.instructions + galleryData.Questions + languagePrompt;
 		else if(questionId < galleryData.questionsToAsk+galleryData.wisdomToOffer)
-			GPTGen.promptWrapper.prePrompt = CurrentPainting.personality + galleryData.instructions + galleryData.Wisdom + languagePrompt;
+			GPTGen.promptWrapper.prePrompt = CurrentPainting.Prompt + galleryData.instructions + galleryData.Wisdom + languagePrompt;
 		else
 		{
-			GPTGen.promptWrapper.prePrompt = CurrentPainting.personality + galleryData.instructions + languagePrompt;
+			GPTGen.promptWrapper.prePrompt = CurrentPainting.Prompt + galleryData.instructions + languagePrompt;
 			responseReader.wrapper.postPrompt = Instruction[Random.Range(0,Instruction.Length)];
 		}
 		

@@ -5,6 +5,7 @@ using TMPro;
 
 namespace BrennanHatton.AI
 {
+	
 	/// <summary>
 	/// strings and text files for prompts to wrap data
 	/// </summary>
