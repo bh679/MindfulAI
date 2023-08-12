@@ -8,6 +8,9 @@ Built using Unity, Microsoft Congative Services, and OpenAi's GPT3
 
 Designed for MacOS, iOS, Windows and Android.
 
+<img width="408" alt="Screenshot 2023-08-12 at 5 43 43 pm" src="https://github.com/bh679/MindfulAI/assets/2542558/6f7e8d45-f562-4565-8dc1-0c13e9c3d5c0">
+
+
 ## Requirements
 [Unity 2021.3.19/f1](https://unity3d.com/unity/whats-new/2021.3.19) (free)   <br />
 MS Cognative Services API Key (trial / paid) <br />
@@ -20,6 +23,7 @@ OpenAI API Key (paid)<br />
 [BrennanHattons Unity Tools](https://github.com/bh679/Unity-Tools) (free)  <br />
 [MS Congantive Services](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/quickstart/csharp/unity/text-to-speech/README.md) <br />
 [MSTextToSpeech](https://github.com/ActiveNick/Unity-Text-to-Speech/tree/master/Assets) <br />
+<img width="412" alt="Screenshot 2023-08-12 at 5 39 42 pm" src="https://github.com/bh679/MindfulAI/assets/2542558/7d5ddfca-6600-406e-a9af-05278f9bd9ab">
 
 Updates:
 [Running on iOS - Brennans FB Post](https://www.facebook.com/brennan.hatton/posts/pfbid0jexxx56myg5NMU5j7L8FS4kEHz9VXNgkgAqngcnzjhUAWSZwuGHobYhyZzLfpyqHl)
